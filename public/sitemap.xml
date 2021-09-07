@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://www.example.com</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T17:01:18.320Z</lastmod></url>
+<url><loc>https://www.example.com/posts/betting-heavy-when-convinced</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T17:01:18.320Z</lastmod></url>
+<url><loc>https://www.example.com/posts/brain-complexity</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T17:01:18.320Z</lastmod></url>
+<url><loc>https://www.example.com/posts/on-the-beauty-of-living</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T17:01:18.320Z</lastmod></url>
+<url><loc>https://www.example.com/posts/principles</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T17:01:18.320Z</lastmod></url>
+<url><loc>https://www.example.com/posts/things-to-do</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T17:01:18.320Z</lastmod></url>
+<url><loc>https://www.example.com/posts/why-do-i-like-traveling</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T17:01:18.320Z</lastmod></url>
+<url><loc>https://www.example.com/posts/writing-down-what-i-know</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T17:01:18.320Z</lastmod></url>
+</urlset>
