@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.example.com
+Host: https://www.trebeljahr.com
 
 # Sitemaps
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://www.trebeljahr.com/sitemap.xml
