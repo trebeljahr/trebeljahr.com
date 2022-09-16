@@ -3,7 +3,6 @@ import { getAllPosts } from "../lib/api";
 import { TrySomeOfThese } from "../components/intro-links";
 import Link from "next/link";
 import { ExternalLink } from "../components/ExternalLink";
-import { NewsletterForm } from "../components/newsletter-signup";
 
 const Index = () => {
   return (
