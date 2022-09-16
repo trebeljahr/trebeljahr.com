@@ -56,6 +56,7 @@ const Index = () => {
         </ExternalLink>
         .
       </p>
+      {/* <NewsletterForm /> */}
     </Layout>
   );
 };
