@@ -1,15 +1,4 @@
-User-agent: *
-Disallow: /email-signup-success
-
-User-agent: *
-Disallow: /api
-
-User-agent: *
-Disallow: /email-signup-error
-
-User-agent: *
-Disallow: /404
-
+# *
 User-agent: *
 Allow: /
 
