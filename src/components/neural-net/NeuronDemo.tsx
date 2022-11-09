@@ -26,8 +26,6 @@ export function randomLengthVector({ min, max }: { min: number; max: number }) {
     .multScalar(rand({ min, max }));
 }
 
-export function inverseBlob(point: Vec2, amount: number, radius: number) {}
-
 export const dataset = {
   datasets: [
     {
