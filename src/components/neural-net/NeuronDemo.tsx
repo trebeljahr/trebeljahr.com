@@ -4,33 +4,13 @@ import {
   LinearScale,
   PointElement,
   LineElement,
-  Tooltip,
   Legend,
 } from "chart.js";
-import { Vec2 } from "../../lib/math/Vector";
-import { createCircleData } from "../../lib/math/datasets/circle";
 import { Point } from "../../lib/math/datasets/utils";
+import { createCircleData } from "../../lib/math/datasets/circle";
 import { createGaussData } from "../../lib/math/datasets/gauss";
 import { createSpiralData } from "../../lib/math/datasets/spiral";
 import { createXorData } from "../../lib/math/datasets/xor";
-import { createGaussRegressData } from "../../lib/math/datasets/gauss-regress";
-
-export function rand({ min, max }: { min: number; max: number }) {
-  return Math.random() * (max + 1 - min) + min;
-}
-
-export function blob(point: Vec2, amount: number, radius: number) {
-  return Array.from({ length: amount }, () => {
-    const offsetPoint = point.add(randomLengthVector({ min: 0, max: radius }));
-    return offsetPoint;
-  });
-}
-
-export function randomLengthVector({ min, max }: { min: number; max: number }) {
-  return new Vec2(rand({ min: -1, max: 1 }), rand({ min: -1, max: 1 }))
-    .unit()
-    .multScalar(rand({ min, max }));
-}
 
 function mapToDataSets(datasets: [Point[], Point[]]) {
   return {
@@ -76,10 +56,6 @@ const ScatterPlot = () => {
       <Scatter
         options={scatterPlotOptions}
         data={mapToDataSets(createXorData(1000))}
-      />
-      <Scatter
-        options={scatterPlotOptions}
-        data={mapToDataSets(createGaussRegressData(1000))}
       />
     </>
   );
