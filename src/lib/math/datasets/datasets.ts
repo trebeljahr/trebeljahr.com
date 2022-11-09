@@ -1,24 +1,3 @@
-export type DataGenerator = (numSamples: number, noise: number) => Point[];
-
-export function classifyTwoGaussData(
-  numSamples: number,
-  noise: number
-): Point[] {
-  let points: Point[] = [];
-
-  function genGauss(cx: number, cy: number, label: number) {
-    for (let i = 0; i < numSamples / 2; i++) {
-      let x = normalRandom(cx);
-      let y = normalRandom(cy);
-      points.push({ x, y });
-    }
-  }
-
-  genGauss(2, 2, 1); // Gaussian with positive examples.
-  genGauss(-2, -2, -1); // Gaussian with negative examples.
-  return points;
-}
-
 export function regressPlane(numSamples: number, noise: number): Point[] {
   let radius = 6;
 

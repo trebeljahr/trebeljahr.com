@@ -8,6 +8,9 @@ import {
   Legend,
 } from "chart.js";
 import { Vec2 } from "../../lib/math/Vector";
+import { createCircleData } from "../../lib/math/datasets/circleData";
+import { Point } from "../../lib/math/datasets/utils";
+import { createGaussData } from "../../lib/math/datasets/gauss";
 
 export function rand({ min, max }: { min: number; max: number }) {
   return Math.random() * (max + 1 - min) + min;
@@ -26,20 +29,22 @@ export function randomLengthVector({ min, max }: { min: number; max: number }) {
     .multScalar(rand({ min, max }));
 }
 
-export const dataset = {
-  datasets: [
-    {
-      label: "Group 1",
-      data: blob(new Vec2(20, 20), 1000, 10),
-      backgroundColor: "rgba(255, 99, 132, 1)",
-    },
-    {
-      label: "Group 2",
-      data: blob(new Vec2(35, 35), 1000, 10),
-      backgroundColor: "rgba(50, 99, 255, 1)",
-    },
-  ],
-};
+function mapToDataSets(datasets: [Point[], Point[]]) {
+  return {
+    datasets: [
+      {
+        label: "Group 1",
+        data: datasets[0],
+        backgroundColor: "rgba(255, 99, 132, 1)",
+      },
+      {
+        label: "Group 2",
+        data: datasets[1],
+        backgroundColor: "rgba(50, 99, 255, 1)",
+      },
+    ],
+  };
+}
 
 ChartJS.register(LinearScale, PointElement, LineElement, Legend);
 
@@ -51,7 +56,18 @@ const ScatterPlot = () => {
       },
     },
   };
-  return <Scatter options={scatterPlotOptions} data={dataset} />;
+  return (
+    <>
+      <Scatter
+        options={scatterPlotOptions}
+        data={mapToDataSets(createCircleData(500))}
+      />
+      <Scatter
+        options={scatterPlotOptions}
+        data={mapToDataSets(createGaussData(500))}
+      />
+    </>
+  );
 };
 
 export const NeuronDemo = () => {
