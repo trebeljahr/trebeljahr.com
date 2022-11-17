@@ -9,6 +9,7 @@ import {
   drawCoordinateSystem,
 } from "../../lib/math/drawHelpers";
 import { Vec2 } from "../../lib/math/Vector";
+import { useZoomControls } from "./NeuronDemo";
 
 function mapToDataSets(datasets: [Vec2[], Vec2[]]) {
   return [

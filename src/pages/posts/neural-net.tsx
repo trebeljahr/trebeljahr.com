@@ -8,6 +8,7 @@ import { NewsletterForm } from "../../components/newsletter-signup";
 import PostHeader from "../../components/post-header";
 
 import { NeuronDemo } from "../../components/neural-net/NeuronDemo";
+import { DataDemos } from "../../components/neural-net/DataDemos";
 
 interface MDXPost extends Post {
   default(props: MDXProps): JSX.Element;
@@ -37,6 +38,7 @@ const PostComponent = () => {
             components={{
               img: ImageRenderer,
               NeuronDemo,
+              DataDemos,
             }}
           >
             <Vectors101Post />
