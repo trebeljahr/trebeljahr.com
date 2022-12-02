@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import SimpleReactCanvasComponent from "simple-react-canvas-component";
 import { useActualSize } from "../../hooks/useWindowSize";
 import { circle, line } from "../../lib/math/drawHelpers";
 import { Vec2 } from "../../lib/math/Vector";
-import { SimpleBarChart } from "./BarChart";
+import { MyGraph } from "./ReactD3Graph";
 import { F, Value } from "./Value";
 
 // function VisualizeValue({ val }: { val: Value }) {
@@ -73,13 +72,14 @@ export function SingleNeuronDemo() {
 
   return (
     <>
-      <SimpleBarChart />
+      {/* <SimpleBarChart /> */}
       {/* <VisualizeValue val={F} /> */}
       {/* <SimpleReactCanvasComponent
         setCnv={setCnv}
         width={width}
         height={height}
       /> */}
+      <MyGraph />
     </>
   );
 }

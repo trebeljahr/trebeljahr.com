@@ -1,13 +1,16 @@
+import { nanoid } from "nanoid";
 export class Value {
   public grad: number;
   public data: number = 0;
   public children: Set<Value>;
   public operation: string;
+  public id: string;
 
   private _backward: () => Value | void;
 
   constructor(data: number, children: Value[] = [], operation: string = "") {
     this.data = data;
+    this.id = nanoid();
     this.grad = 0;
     this._backward = () => {};
     this.children = new Set(children);
