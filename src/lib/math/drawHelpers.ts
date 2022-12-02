@@ -203,11 +203,30 @@ export function getRotationMatrix(θ: number, { x, y }: Vec2 = new Vec2(0, 0)) {
   ]);
 }
 
-export function circle(ctx: CanvasRenderingContext2D, p: Vec2, d: number) {
+function withDrawOptions(ctx: CanvasRenderingContext2D, options: ColorOptions) {
+  ctx.fillStyle = options.fill || ctx.fillStyle;
+  ctx.strokeStyle = options.fill || ctx.strokeStyle;
+  ctx.lineWidth = options.lineWidth || ctx.lineWidth;
+}
+
+type ColorOptions = {
+  fill?: string;
+  stroke?: string;
+  lineWidth?: number;
+};
+
+export function circle(
+  ctx: CanvasRenderingContext2D,
+  p: Vec2,
+  d: number,
+  options = {} as ColorOptions
+) {
   ctx.save();
+  withDrawOptions(ctx, options);
   ctx.beginPath();
   ctx.arc(p.x, p.y, d, 0, 2 * Math.PI);
   ctx.fill();
+  ctx.stroke();
   ctx.closePath();
   ctx.restore();
 }

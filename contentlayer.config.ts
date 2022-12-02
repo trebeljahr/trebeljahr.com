@@ -154,7 +154,6 @@ export const Newsletter = defineDocumentType(() => ({
       type: "string",
       resolve: (doc) => {
         const time = readingTime(doc.body.raw);
-        console.log(time);
         return time.text;
       },
     },

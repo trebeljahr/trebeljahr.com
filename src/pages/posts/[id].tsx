@@ -7,6 +7,8 @@ import { ToTopButton } from "../../components/ToTopButton";
 import { ReadMore } from "../../components/more-stories";
 import { getRandom } from "src/lib/math/getRandom";
 import { MarkdownRenderers } from "src/components/CustomRenderers";
+import { useLiveReload } from "next-contentlayer/hooks";
+import { SingleNeuronDemo } from "../../components/neural-net/SingleNeuronDemo";
 
 type Props = {
   children: React.ReactNode;
@@ -45,11 +47,12 @@ type BlogProps = {
 };
 
 export default function PostComponent({ post, morePosts }: BlogProps) {
+  useLiveReload();
   const Component = useMDXComponent(post.body.code);
 
   return (
     <BlogLayout post={post} morePosts={morePosts}>
-      <Component components={{ ...MarkdownRenderers }} />
+      <Component components={{ ...MarkdownRenderers, SingleNeuronDemo }} />
     </BlogLayout>
   );
 }
@@ -68,9 +71,7 @@ export async function getStaticProps({ params }: Params) {
   const otherPosts = allPosts
     .filter((post) => post.id !== params.id)
     .map(({ title, slug }) => ({ title, slug }));
-  console.log({ otherPosts });
   const morePosts = getRandom(otherPosts, 3);
-  console.log({ morePosts });
 
   return { props: { post, morePosts } };
 }

@@ -33,7 +33,6 @@ function plotDatasets(ctx: CanvasRenderingContext2D, datasets: Dataset[]) {
 function plotDataset(ctx: CanvasRenderingContext2D, dataset: Dataset) {
   ctx.fillStyle = dataset.color;
   for (let point of dataset.data) {
-    console.log(point);
     circle(ctx, new Vec2(point.x, point.y), 5);
   }
 }

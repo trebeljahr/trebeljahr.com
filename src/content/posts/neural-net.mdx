@@ -2,18 +2,23 @@
 title: "What is a Neural Network?"
 subtitle: "How to build a Neural Network from Scratch"
 excerpt: "This post is going to explain how a neural network works, completely from scratch, including the mathematics. It's the first part in a series of posts that explain how machine learning works."
-cover: "/assets/blog/neural-net.png"
-date: "2022-11-24"
+cover: 
+  src: "/assets/blog/neural-net.png"
+tags: ["engineering", "programming", "mathematics", "neural networks", "machine learning", "AI", "1-month-project"]
+date: "2022-12-01"
 author:
   name: Rico Trebeljahr
   picture: "/assets/blog/profile.jpeg"
-
 ---
 
 <p>{excerpt}</p>
 
 After reading this, you should be able to understand the code that makes a neural network *work*.
 
-<DataDemos />
+To understand a Neural Network, we first have to look at a single neuron. Even though they share the same name, they don't have much in common with *actual* biological neurons. In machine learning and neural networks, a "neuron" is nothing but a very simple function. It has a number of inputs, and computes an output from them, by applying some mathematical operation. Like an addition, or a multiplication. 
 
-<NeuronDemo />
+Let's look at a neuron in action.
+
+<SingleNeuronDemo />
+
+

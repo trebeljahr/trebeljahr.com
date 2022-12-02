@@ -4,9 +4,6 @@ const nextConfig = {
   images: {
     domains: [process.env.NEXT_PUBLIC_STATIC_FILE_URL],
   },
-  experimental: {
-    esmExternals: false,
-  },
 };
 
 module.exports = withContentlayer(nextConfig);

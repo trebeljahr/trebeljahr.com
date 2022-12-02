@@ -21,7 +21,6 @@ export function useZoomControls(cnv: HTMLCanvasElement | null) {
   const { width, height } = useActualSize();
 
   useEffect(() => {
-    console.log("Running useEffect");
     if (!cnv) return;
     cnv.style.touchAction = "none";
 
