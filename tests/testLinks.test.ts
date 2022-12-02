@@ -11,7 +11,6 @@ import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import remarkGfm from "remark-gfm";
 import remarkToc from "remark-toc";
 import { existsSync } from "fs";
-import fetch from "node-fetch";
 
 async function generateLinksAndAnchors(document: DocumentTypes) {
   const links = new Set<string>();
