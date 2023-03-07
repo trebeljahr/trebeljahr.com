@@ -1,14 +1,5 @@
 const { withContentlayer } = require("next-contentlayer");
 
-const nextConfig = {
-  images: {
-    domains: [process.env.NEXT_PUBLIC_STATIC_FILE_URL],
-  },
-  experimental: {
-    esmExternals: false,
-  },
-};
-
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
@@ -17,6 +8,51 @@ const withPWA = require("next-pwa")({
   dest: "public",
   disable: process.env.NODE_ENV === "development",
 });
+
+const nextConfig = {
+  experimental: {},
+  images: {
+    domains: [process.env.NEXT_PUBLIC_STATIC_FILE_URL],
+  },
+  reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
+  webpack(config, { isServer }) {
+    // audio support
+    config.module.rules.push({
+      test: /\.(ogg|mp3|wav|mpe?g)$/i,
+      exclude: config.exclude,
+      use: [
+        {
+          loader: require.resolve("url-loader"),
+          options: {
+            limit: config.inlineImageLimit,
+            fallback: require.resolve("file-loader"),
+            publicPath: `${config.assetPrefix}/_next/static/images/`,
+            outputPath: `${isServer ? "../" : ""}static/images/`,
+            name: "[name]-[hash].[ext]",
+            esModule: config.esModule || false,
+          },
+        },
+      ],
+    });
+
+    // shader support
+    config.module.rules.push({
+      test: /\.(glsl|vs|fs|vert|frag)$/,
+      exclude: /node_modules/,
+      use: ["raw-loader", "glslify-loader"],
+    });
+
+    return config;
+  },
+};
+
+// manage i18n
+if (process.env.EXPORT !== "true") {
+  nextConfig.i18n = {
+    locales: ["en", "jp"],
+    defaultLocale: "en",
+  };
+}
 
 const KEYS_TO_OMIT = [
   "webpackDevMiddleware",
@@ -29,47 +65,13 @@ const KEYS_TO_OMIT = [
 ];
 
 module.exports = (_phase, { defaultConfig }) => {
-  const plugins = [[withPWA], [withBundleAnalyzer, {}]];
-
-  const configWith3D = {
-    experimental: {},
-    images: {},
-    reactStrictMode: true,
-    webpack(config, { isServer }) {
-      config.module.rules.push({
-        test: /\.(ogg|mp3|wav|mpe?g)$/i,
-        exclude: config.exclude,
-        use: [
-          {
-            loader: require.resolve("url-loader"),
-            options: {
-              limit: config.inlineImageLimit,
-              fallback: require.resolve("file-loader"),
-              publicPath: `${config.assetPrefix}/_next/static/images/`,
-              outputPath: `${isServer ? "../" : ""}static/images/`,
-              name: "[name]-[hash].[ext]",
-              esModule: config.esModule || false,
-            },
-          },
-        ],
-      });
-
-      config.module.rules.push({
-        test: /\.(glsl|vs|fs|vert|frag)$/,
-        exclude: /node_modules/,
-        use: ["raw-loader", "glslify-loader"],
-      });
-
-      return config;
-    },
-  };
+  const plugins = [[withPWA], [withBundleAnalyzer, {}], [withContentlayer]];
 
   const wConfig = plugins.reduce(
     (acc, [plugin, config]) => plugin({ ...acc, ...config }),
     {
       ...defaultConfig,
       ...nextConfig,
-      ...configWith3D,
     }
   );
 
@@ -80,5 +82,5 @@ module.exports = (_phase, { defaultConfig }) => {
     }
   });
 
-  return withContentlayer(finalConfig);
+  return finalConfig;
 };

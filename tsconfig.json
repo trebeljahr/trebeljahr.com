@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es5",
+    "baseUrl": ".",
     "module": "esnext",
     "jsx": "preserve",
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,10 +15,19 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
-    "baseUrl": ".",
     "paths": {
       "contentlayer/generated": ["./.contentlayer/generated"],
-      "components/collision-detection": ["./src/components/collision-detection"]
+      "components/collision-detection": [
+        "./src/components/collision-detection"
+      ],
+      "@*": ["src/*"],
+      "@models*": ["src/models/*"],
+      "@shaders*": ["src/shaders/*"]
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "target": "esnext"
     }
   },
   "exclude": ["node_modules", "scripts"],
