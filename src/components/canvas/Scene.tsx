@@ -1,7 +1,12 @@
 import { Canvas } from "@react-three/fiber";
 import { KeyboardControls, Preload } from "@react-three/drei";
 
-export default function Scene({ children, ...props }) {
+type Props = {
+  children: React.ReactNode;
+  [x: string]: any;
+};
+
+export default function Scene({ children, ...props }: Props) {
   return (
     <KeyboardControls
       map={[

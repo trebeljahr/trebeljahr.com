@@ -15,22 +15,55 @@ import "../styles/cv.css";
 
 import Script from "next/script";
 import Head from "next/head";
+import { useRef } from "react";
+import dynamic from "next/dynamic";
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+const Scene = dynamic(() => import("../components/canvas/Scene"), {
+  ssr: true,
+});
+
+interface CustomAppProps extends Omit<AppProps, "Component"> {
+  Component: AppProps["Component"] & { canvas?: () => JSX.Element };
+}
+
+export default function MyApp({ Component, pageProps }: CustomAppProps) {
+  const ref = useRef();
+
   return (
     <>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-094TFMBB0J"
-      />
-      <Script id="gtaginit">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-094TFMBB0J');
-       `}
-      </Script>
+      <GoogleAnalytics />
+      <HeadContent />
+      <MDXProvider
+        components={{
+          img: ImageRenderer,
+          a: LinkRenderer,
+          p: ParagraphRenderer,
+          h1: HeadingRenderer(1),
+          h2: HeadingRenderer(2),
+          h3: HeadingRenderer(3),
+          h4: HeadingRenderer(4),
+          h5: HeadingRenderer(5),
+          h6: HeadingRenderer(6),
+        }}
+      >
+        <Component {...pageProps} />
+      </MDXProvider>
+      {Component?.canvas && (
+        <Scene
+          className="pointer-events-none"
+          eventSource={ref}
+          eventPrefix="client"
+        >
+          {Component.canvas()}
+        </Scene>
+      )}
+    </>
+  );
+}
+
+function HeadContent() {
+  return (
+    <>
       <Head>
         <link
           rel="apple-touch-icon"
@@ -64,21 +97,25 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </Head>
-      <MDXProvider
-        components={{
-          img: ImageRenderer,
-          a: LinkRenderer,
-          p: ParagraphRenderer,
-          h1: HeadingRenderer(1),
-          h2: HeadingRenderer(2),
-          h3: HeadingRenderer(3),
-          h4: HeadingRenderer(4),
-          h5: HeadingRenderer(5),
-          h6: HeadingRenderer(6),
-        }}
-      >
-        <Component {...pageProps} />
-      </MDXProvider>
+    </>
+  );
+}
+
+function GoogleAnalytics() {
+  return (
+    <>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-094TFMBB0J"
+      />
+      <Script id="gtaginit">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-094TFMBB0J');
+       `}
+      </Script>
     </>
   );
 }
