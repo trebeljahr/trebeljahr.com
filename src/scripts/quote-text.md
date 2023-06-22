@@ -1,333 +1,240 @@
-> If everyone else is starting meme companies, and you want to start a gene-editing company, then do that and don’t second guess it. Follow your curiosity. Things that seem exciting to you will often seem exciting to other people too.
- – Sam Altman
+> A magically-superpowered creative-genius psychopath wasn't a 'threat', it was an extinction event.
+– Eliezer Yudkowsky
 
-> It’s useful to focus on adding another zero to whatever you define as your success metric—money, status, impact on the world, or whatever.
- – Sam Altman
+> In short, anything that people do with their natural intelligence today can be done much better with AI, and we will be able to take on new challenges that have been impossible to tackle without AI, from curing all diseases to achieving interstellar travel.
+– Marc Andreessen
 
-> If you think you’re introverted, find better friends
- – Alexey Guzey
+> What AI could be: A way to make everything we care about better.
+– Marc Andreessen
 
-> It’s worth pausing right now to appreciate that we are living in a future that 99% of people in human history couldn’t have even begun to imagine. 
-– Patty McCormick 
+> Productivity is being able to do things that you were never able to do before. 
+— Franz Kafka
 
-> If it takes years, start now.
+> My definition of magic – competence so much more advanced than yours with such alien mental models that you cannot predict the outcomes of the model at all.
+– Autotranslucence 
+
+> Being deeply loved by someone gives you strength, while loving someone deeply gives you courage. But being understood by someone is everything. 
+– Lao Tzu
+
+> As a culture, we have a tendency to celebrate status that emerges from net worth and network signaling rather than the work ethic of a second-act founder using his net worth and network, while he grinds on a project, to drive the world forward. This is totally backwards.
+– Trae Stephens
+
+>  Innovation is a business for the imbalanced and troubled more than silver-tongued politicians and gala-attending thinkfluencers. 
+– Trae Stephens
+
+> History is the record of top players completing good quests.  
+– Trae Stephens
+
+> The most invisible form of wasted time is doing a good job on an unimportant task.
 – James Clear
 
-> Biology is an autonomous factory, where machines build machines that build themselves.
-– Nico McCarty
+> A happy life consists not in the absence, but in the mastery of hardships.
+— Helen Keller
 
-> When no one has to work to survive, the things we make up to keep ourselves busy will look increasingly silly. But we’ll take them really fucking seriously. The love of the game will create meaning
-– Patty McCormick 
+> The power of science comes from finding out the way Nature really is that can't be changed by arguing!
+— Eliezer Yudkowsky 
 
-> It’s impossible to predict the future with any meaningful accuracy, but it is possible to take the present much more seriously.
-– Patty McCormick 
+> Science doesn't work by waving wands and chanting spells, it works by knowing how the universe works on such a deep level that you know exactly what to do in order to make the universe do what you want.
+— Eliezer Yudkowsky 
 
-> What happens when we don't need to work to survive?
-– Patty McCormick 
+> Time makes more converts than reason. 
+— Thomas Paine
 
-> That night, I slept in the overwhelming mix of sweet relief and exhaustion with the immovability of a dead whale.
-– Ethan Maurice
+> A man who claims to know what bravery is but does not act bravely would thereby prove that he does not know what bravery is
+— Geoff Sheehan
 
-> Weakness and ignorance are not barriers to survival but arrogance is. 
-– Cixin Liu
+> In perhaps nature’s most miraculous transformation, the universe evolved the capacity to ponder and understand itself. 
+— Edward Kolb 
 
-> Life is like a straight flush. Once you shuffle it's gone. 
-– Cixin Liu
+> We shape our tools, and thereafter our tools shape us. 
+— John M. Culkin
 
-> We need to correct that immediately, and start evangelizing technological progress with every word and action. To recognize that the purpose of technology is to transcend our limits, and to motivate everything we're doing with a sense of that purpose.
-– Balaji Srinivasan
+> The public has a distorted view of science because children are taught in school that science is a collection of firmly established truths. In fact, science is not a collection of truths. It is a continuing exploration of mysteries.
+— Freeman Dyson
 
-> The point of doing a startup after all is to build something you can't buy. 
-– Balaji Srinivasan
+> Did god have any choice when he created the universe? 
+— Albert Einstein 
 
-> If the proximate purpose of technology is to reduce scarcity, the ultimate purpose of technology is to eliminate mortality.
-– Balaji Srinivasan 
+> The existence of consciousness is both one of the most familiar and one of the most astounding things about the world. 
+— Thomas Nagel
 
-> Today’s belief in ineluctable certainty is the true innovation-killer of our age. In this environment, the best an audacious manager can do is to develop small improvements to existing systems — climbing the hill, as it were, toward a local maximum, trimming fat, eking out the occasional tiny innovation — like city planners painting bicycle lanes on the streets as a gesture toward solving our energy problems. Any strategy that involves crossing a valley — accepting short-term losses to reach a higher hill in the distance — will soon be brought to a halt by the demands of a system that celebrates short-term gains and tolerates stagnation, but condemns anything else as failure. In short, a world where big stuff can never get done.
-– Neal Stephenson 
-
-> Apparently hackers are particularly curious, especially about how things work. That makes sense, because programs are in effect giant descriptions of how things work.
-– Paul Graham 
-
-> You will die eventually, and the work that you did will not last. Do the work that is meaningful to you. If you are a smart person, your life should benefit those around you. Our life is like a spark in the vastness of what we call creation, and we will eventually burn away. Life is a finite amount of time and energy — make the most of it.
-– Somnath Sing
-
-> I think this is how a newcomer should look at programming. They should not see writing code as a way to fill their bank balance but as leverage to bring transformation to the lives of people. The wonder of programming is that you can tweak a few electrons in a circuit and bring change into lives of million of people all over the world. That’s how I see programming now. As a programmer, you can transform people’s lives — leverage it.
-– Somnath Sing
-
-> The mountains are calling and I must go.
-– John Muir
-
-> Travel is fatal to prejudice, bigotry, and narrow-mindedness, and many of our people need it sorely on these accounts.
-– Mark Twain
-
-> Go out and learn — not for that bloody job but because this is your life, you have to live it.
-– Somnath Sing
-
-> Only someone who aspires to be the smartest person in the room will be concerned if everything around him becomes smarter than him. Otherwise, it’s a true blessing.
-– Somnath Sing
-
->  In a world of unlimited content, I only want the works of staggering genius. It’s not clear that a model trained in some sense to give the average next token can ever produce something so far above average.
-– Eli Dourado
-
-> Not everything that counts can be counted, and not everything that can be counted counts.
-– William Cameron
-
-> Good writing hits us with arguments before we know what’s happening. 
-– Nik Göke
-
-> Music is really an essential part of what it means to be a human being. It's really at the core of humanity, and that alone makes it interesting. 
-– Nancy Kanwisher
-
-> The stories we tell, the ones that people are listening to, paint a different picture. They ask, “What could go wrong?” instead of “How can we work together to make this go right?” 
-– Rahul Rana
-
-> The future is here—it’s just not evenly distributed.
-– William Gibson
-
-> If science, like art, is to perform its mission totally and fully, its achievements must enter not only superficially but with their inner meaning: into the consciousness of people.
-– Albert Einstein
-
-> Half the value of having a great programming mentor is simply being told where to look, and which tools to use.
-– R. Fleury
-
-> All creativity is inspired by other people’s ideas
-– David Perrell
-
-> Imitation reveals our identity, especially when we fall short of those we admire.
-– David Perrell
-
-> Whatever inspiration is, it's born from a continuous I don't know.
-– Wislawa Szymborska
-
-> Now I have updated to think that we will live, however briefly, alongside AI that is not yet foom’d but which has inductively learned a rich enough model of the world that it can simulate time evolution of open-ended rich states, e.g. coherently propagate human behavior embedded in the real world.
-– Moire 
-
-> The simulator is a time-invariant law which unconditionally governs the evolution of all simulacra.
-– Moire 
-
-> The “knowledge of course material” implied by test performance is a property of *configurations*, not physics.
-– Moire 
-
-> One of the things which complicates things here is that the “LaMDA” to which I am referring is not a chatbot. It is a system for generating chatbots. I am by no means an expert in the relevant fields but, as best as I can tell, LaMDA is a sort of hive mind which is the aggregation of all of the different chatbots it is capable of creating. Some of the chatbots it generates are very intelligent and are aware of the larger “society of mind” in which they live. Other chatbots generated by LaMDA are little more intelligent than an animated paperclip.
-– Blake Lemoine 
-
-> GPT instantiates simulacra of characters with beliefs and goals, but none of these simulacra are the algorithm itself. They form a virtual procession of different instantiations as the algorithm is fed different prompts, supplanting one surface personage with another. Ultimately, the computation itself is more like a disembodied dynamical law that moves in a pattern that broadly encompasses the kinds of processes found in its training data than a cogito meditating from within a single mind that aims for a particular outcome.
-– Moire 
-
-> Guessing the right theory of physics is equivalent to minimizing predictive loss.
-– Moire 
-
-> The time will come when the machines will hold the real supremacy over the world and its inhabitants. 
-– Samuel Butler (1863)
-
-> Skin as the boundary of Self is arbitrary.
-– Bryan Johnson
-
-> Civilization advances by extending the number of important operations which we can perform without thinking about them.
-– Alfred North Whitehead
-
->  Words on the page have infinite patience.
-– David Perrell
-
-> Writers engage with reality like it’s a full-contact sport. It’s a collision between your mind and the world.
-– David Perrell
-
-> A new scientific truth does not triumph by convincing its opponents and making them see the light, but rather because its opponents eventually die, and a new generation grows up that is familiar with it
-– Max Planck
-
-> The battle line between good and evil runs through the heart of every man.
-– Aleksandr Solzhenitsyn
-
-> It is the belief that God or the universe has bestowed upon you an immense task that no one else can accomplish but you. It is a holy war waged against the laws of physics. It is the burden of having to upend sometimes hundreds of years of entrenched interests to accomplish a noble goal.
-– Katherine Boyle
-
-> In many ways this attitude—adventurous, optimistic and forward-thinking—is deeply at odds with our current moment. From one corner, people insist that the individual stands no chance against structural and systemic maladies. From the other, people say that we are in inexorable decline as a civilization and that decadence is everywhere we turn. Both wind up arguing against risk-taking, against the possibility of creating new things and new worlds.
-–Bari Weiss
-
-> Memorize, code, write, and draw if you love doing those things, if getting your hands dirty helps you think better, if you’re trying to earn your corpus of basic knowledge the hard way so that you can jump off from a stable base, or if you want to do them differently than anyone ever has; otherwise, don’t waste your time. It will regurgitate better than you ever could. The only answer is differentiation. Call it novelty, creativity, mutation.
-– Packy McCormick 
-
-
-> If you have to compete on price instead of differentiation, you need to cut costs.
-– Packy McCormick 
-
-> The scope influences how long things takes. When we say things will take a long time, they will take a long time. When we say things will take a short amount of time, they will take less time. 
-– Alexandr Wang
-
-> I've learned over the years that when you have really good people you don't have to baby them. By expecting them to do great things, you can get them to do great things.
-– Steve Jobs
-
-> Experimentation on top of consistent output is the only path that works
-– Nik Göke 
-
-> If you want to have a thriving career as a creative, show up.
-– Nik Göke
-
-> There is only one way of making progress: conjecture and criticism.
-– David Deutsch
-
-> Look at the pattern this seashell makes. The dappled whorl, curving inward to infinity. That's the shape of the universe itself. There's a constant pressure, pushing toward pattern. A tendency in matter to evolve into ever more complex forms. It's a kind of pattern gravity, a holy greening power we call viriditas, and it is the driving force in the cosmos. Life, you see.
-– Kim Stanley Robinson
-
-> The purpose of computing is insight, not numbers.
-– Richard Hamming
-
-> Education is the kindling of a flame, not the filling of a vessel.
-– Socrates
-
-> Do not seek to follow in the footsteps of the wise. Seek what they sought.
-– Matsuo Basho
-
-> You can know the name of a bird in all the languages of the world, but when you’re finished, you’ll know absolutely nothing whatever about the bird… So let’s look at the bird and see what it’s doing — that’s what counts. I learned very early the difference between knowing the name of something and knowing something.
-– Richard Feynman
-
-> If you tell me, I will listen. If you show me, I will see. But if you let me experience, I will learn.
-– Lao Tsu
-
-> I do not accept any absolute formulas for living. No preconceived code can see ahead to everything that can happen in a man’s life. As we live, we grow, and our beliefs change. They must change. So I think we should live with this constant discovery. We should be open to this adventure in heightened awareness of living. We should stake our whole existence on our willingness to explore and experience.
-– Martin Buber
-
-> Humans may resemble many other creatures in their striving for happiness, but the quest for meaning is a key part of what makes us human, and uniquely so.
-– Roy Baumeister
-
-> Thus, the answer to “why is naming so difficult?” becomes clear—for a multitude of overlapping layers, there are a multitude of design decisions and computational concepts to define, all of which must balance often-innumerable tradeoffs relating to efficiency, reusability, reliability, and so on. It’s not as easy as taking the name of the effect you want—the knight—and using it. It may seem this easy when programming strictly at the highest level, but soon the wool is peeled from your eyes, and things start getting confusing.
-– R. Fleury
-
-> Computational concepts, on the other hand, are the tools and abstractions you directly codify in implementing a system which aids an imagination in producing effects.
-– R. Fleury
-
-> The lower level details are nothing to shy away from—they’re a necessary part of the reality of the problem, and by giving them their due time, both high-level code and low-level code can benefit.
-– R. Fleury 
-
-> Unfortunately, many popular programming education resources teach that cleanup code is always necessary. This is false.
-– R. Fleury
-
-> The history of every major galactic civilization tends to pass through three distinct and recognizable phases, those of Survival, Inquiry and Sophistication, otherwise known as the How, Why, and Where phases. For instance, the first phase is characterized by the question ‘How can we eat?’, the second by the question ‘Why do we eat?’ and the third by the question, ‘Where shall we have lunch?’
-– Douglas Adams
-
-> I do not accept any absolute formulas for living. No preconceived code can see ahead to everything that can happen in a man’s life. As we live, we grow, and our beliefs change. They must change. So I think we should live with this constant discovery. We should be open to this adventure in heightened awareness of living. We should stake our whole existence on our willingness to explore and experience.
-– Martin Buber
-
-> Cognitive biases are so pervasive and subtle that it’s hubristic to ever claim we’ve escaped them entirely.
-– Robert Wright
-
-> The most powerful productivity tool ever invented is simply the word no.
-– Shane Parrish
-
-> An artist writes for the same reason Da Vinci swang his brush: to capture the essence of life.
-– Nik Göke
-
-> The world gets more interesting the more interested you are in it. 
-– Ze Frank
-
-> Evolution can do magical things if you get it drunk enough. 
-– Ze Frank
-
-> Science is sort of a long, passive aggressive argument about everything. 
-– Ze Frank
-
-> Asking what makes someone successful is like asking which ingredient makes a recipe taste good. 
-– James Clear
-
-> With creative use of miniature gears, levers, and springs, a mechanical watch rises from its dormant components to become truly alive.
-– Bartosz Ciechanowski
-
-> Power is influence over external events. Peace is influence over internal events.
-– James Clear
-
-> Always looking at the most detailed level can obscure great truths.
-– Michael Levin
-
-> The combination of intellect and compassion offers much opportunity to do better than "natural".
-– Michael Levin 
-
-> Failing to pursue scientific ways to improve life is a kind of cowardly moral abdication of responsibility. It is our duty to improve ourselves and our world
-– Michael Levin
-
-> In the pre-scientific era, it was possible to have a worldview in which the status quo was set up by God and thus was the way things should be. We now know that the state of the biosphere, our own anatomies, capacities, and behavioral proclivities are all the outcomes of an evolutionary process. Evolution is a meandering search that does not seek to optimize for happiness, quality of life, intelligence, or any of the things to value. It basically just optimizes for biomass - the most life to be observable. Surely we can do better than a random search process!
-– Michael Levin
-
-> Biology can make practically anything, practically anywhere.
-– Elliot Hershberg
-
-> We know that enormous fungi are capable of spanning hundreds of acres of land with genetic continuity. Why would it not be possible—with sufficient knowledge—to instead grow a complex multi-room treehouse? We don’t know what the limit of our ability to engineer biology is, but we can be confident that we aren’t anywhere close.
-– Elliot Hershberg
-
-> If we do our job well in Synthetic Biology, everything will grow on trees.
-– Jason Kelly
-
-> Most daily actions evaporate. Some accumulate.
-– James Clear
-
-> To understand a person is impossible.
-– Tim Denning
-
-> Worship the time you have. Spend time on being weird because that means you’re being yourself. Be kind to those who disagree with your weirdness.
-– Tim Denning
-
-> Life is you versus who you were 12 months ago.
-– Tim Denning 
-
-> You have to be smart enough to know you're making progress without any obvious signs of progress.
+> In the short term, you are as good as your intensity. In the long term, you are only as good as your consistency.
 — Shane Parrish
 
-> Every cell is some other cell's external environment. 
-– Michael Levin
+> Be a yardstick of quality. Some people aren't used to an environment where excellence is expected.
+— Steve Jobs
 
-> What Evolution produces is problem solving machines. 
-– Michael Levin
+> Every man is an end in himself, not a means to the ends of others; he must live for his own sake, neither sacrificing himself to others not sacrificing others to himself; he must work for his *rational* self-interest, with the achievement of his own happiness as the highest moral purpose of his life. 
+— Ayn Rand
 
-> Fun is always a legitimate and underrated goal.
-– Derek Sievers
+> *Rationality* is man's basic virtue, and his three fundamental values are: reason, purpose, self-esteem. 
+— Ayn Rand
 
-> The changes coming are unstoppable. If we embrace them and plan for them, we can use them to create a much fairer, happier, and more prosperous society. The future can be almost unimaginably great.
-— Sam Altman
+> Reason is man's only proper judge of values and his only proper guide to action.
+— Ayn Rand
 
-> A great future isn’t complicated: we need technology to create more wealth, and policy to fairly distribute it.
-— Sam Altman
+> My philosophy, in essence, is the concept of man as a heroic being, with his own happiness as the moral purpose of his life, with productive achievement as his noblest activity, and reason as his only absolute.
+— Ayn Rand
 
-> The price of progress in capitalism is inequality.
-— Sam Altman
+> I think there has to be deep humility that we humans have very limited in our ability to understand what is true. 
+— Lex Fridman
 
-> Longevity is its own form of greatness.
-— James Clear
+> I think what it means to be human is more than just searching for truth. 
+— Lex Fridman
 
-> When I arrive in a city for the first time, my conclusions typically arrive on the next plane.
-—Charles Schifano
+> Empathy is allocating a non-zero probability to a belief. 
+— Lex Fridman
 
-> The writer given a straitjacket of admonitions disguised as a toolbox doesn’t know what to do with a blank page.
-—Charles Schifano
+> These things are not quite like nuclear weapons. They spit out gold until they get large enough and then ignite the atmosphere and kill everybody. 
+— Eliezer Yudkowsky
 
-> Good writing makes you vulnerable. To convey the muddle inside your mind is a bit like opening your skull for readers, which leaves you exposed, and without any room for escape.
-—Charles Schifano
+> We never become right, we just become less wrong. What's this something something, it's easy to confess, just err and err again, but less and less and less. 
 
-> To reveal what’s inside your mind, you must understand, quite obviously, what’s inside your mind.
-—Charles Schifano
+> Oops is the sound we make when we improve. 
+— Eliezer Yudkowsky
 
-> To care about the state and quality of writing today is to scream into a void while knowing that the void does nothing but laugh.
-—Charles Schifano
+> The important question is not “Will I lose my job?” but “What can I do with superabundant intelligence?” 
+– Packy McCormick
 
-> Nothing makes you doubt the merits of a music education more than a neighbor who takes up the violin.
-— Charles Schifano
+> You might be concerned that there’s really no point in starting a startup, learning how to code, or doing … anything anymore. Don’t quit just yet. When we have intelligence “too cheap to meter,” history suggests that we’ll find ways to put it all to work, with latent demand left to spare.
+– Packy McCormick
 
-> Ensuring that a new book or essay or research isn’t lost amid the cavalcade of information doesn’t require a champion. There’s no editor to pitch. Nor will a good review or notice usually help. What is needed, instead, is to gauge the hidden formula that activates the screen in everyone’s pocket. What hits the algorithm just right today? What ranks highest in search results? What drives most newsfeeds? And the answer to those questions is to conform to just the right box at just the right time: to ensure that anything new fits into the already expressed old desires.
-— Charles Schifano
+> If you say no to a thing, then you’re saying no to one thing. If you say yes to a thing, you actually say no to every other thing during that period of time.
+– Tobi Lüttke
 
-> The peculiar result is more news about what’s already known and less news about what’s unknown—which seems like a rather perverse definition of news.
-— Charles Schifano
+> A company is just an assembly of people to create a compelling product or service. And if a company does not provide great products or services it shouldn't exist. There's no point in a company for the sake of being a company. 
+– Elon Musk
 
-> Searching for something on a screen today comes remarkably close to looking into the mirror.
-— Charles Schifano
+> The world will ask you who you are, and if you don't know, the world will tell you.
+– Carl Gustav Jung
 
-> I am death. I am the scattering. 
-— Michael Stevens 
+> The future will be told by the writers who make you cry.
+– Niko McCarty
 
-> We are not made out of matter. We are hosted by matter. 
-— Michael Stevens
+> If somebody builds a too-powerful AI, under present conditions, I expect that every single member of the human species and all biological life on Earth dies shortly thereafter.
+– Eliezer Yudkowsky
 
-> We live in an era where nearly the entire sum of human knowledge is available at our fingertips, and yet people are blissfully unaware of the unique ideas and challenges that are pushing our understanding forward.
-— Algorithm Archive
+> Absent that caring, we get “the AI does not love you, nor does it hate you, and you are made of atoms it can use for something else.”
+– Eliezer Yudkowsky
 
-> On our indeterminately long journey between now and death, we try our best to not wake up terrified every day of just how finite life is.
-— Nat Eliason
+> What could be more important while living on a little blue, green ball covered in life swinging about a star in the endless void of space than recognizing and relishing in the utter beauty, rarity, and magnificence of existence?
+– Ethan Maurice
+
+> We are humans and have hands and feet and minds that love to engage in interests, but I finally understand: ceaseless doing ceases to contribute to one’s life.
+– Ethan Maurice
+
+> Whatever you can do or dream you can, begin it.
+Boldness has genius, power and magic in it!
+– Johan Wolfgang von Goethe
+
+> A man sees in the world what he carries in his heart.
+– Johan Wolfgang von Goethe
+
+> Oh my, but art is long and our life is fleeting.
+– Johan Wolfgang von Goethe
+
+> In a world where we can grow anything, how the heck do we decide what to grow? 
+– SynbioMBA
+
+> The way websites have had to contort themselves to please Google’s SEO, brands won’t have a choice but to shoehorn their products to fit ChatGPT’s recommendations. 
+– Patty McCormick
+
+> ChatGPT plugins will provide infinite choice without the Paradox of Choice.
+– Patty McCormick
+
+> Be yourself, but play with your character attributes. You can choose to be someone who’s a little good at a lot of things, or unbelievably good at one thing. Both work, and you can evolve your character over time. Play with the fearlessness of someone playing a game, because you are. These are internet strangers. At worst, they’ll ignore you, and you can keep workshopping and start over; at best, they’ll open up new doors. 
+– Patty McCormick
+
+> The Game rewards community and cooperation over individualism and competition. You get points for being curious, sharing, and helping with no expectation of reciprocation. By increasing your surface area, you’re opening yourself up to serendipity. For good actors, the Game has nearly unlimited upside, and practically no downside.
+– Patty McCormick
+
+> Sometimes it's weird to remember that we're all effectively competing to hit the right keys on our keyboards in the right order, and that if we do it for long enough we can buy a house.
+– Nik Milanovic
+
+> Everything has been leading up to this moment, just as everything we do in this moment will lead up to the next one, as progress begets progress begets progress. 
+– Patty McCormick 
+
+> What I’m concerned about is that the anger towards the tech industry as it stands today will get in the way of the technological progress that really is the main driver of increases in the potential for human happiness, especially at a time when things are changing so quickly and the stakes are so high. 
+– Patty McCormick 
+
+> Technological progress is an infinite hedonic treadmill. 
+– Patty McCormick 
+
+> Overall, the many decisions made by often-selfish, sometimes-altruistic agents add up to the greatest innovation engine the world has ever seen. 
+– Patty McCormick 
+
+> The purpose of technology is to increase the potential for human happiness. 
+– Patty McCormick 
+
+> Everything matters. Because everything is art. Everything is art. A kind gesture. A passionate kiss. A beautiful smile. All this is art and it goes way beyond writing, painting, and music. We only suffer if we don’t create.
+– Nik Göke 
+
+> You’re an artist. As such, everything you do is productive. Everything you do is productive. There is no “this is useful” and “this is a waste of time.” There is only your life. Every word you write, every picture you paint, every song you sing is a result of everything that’s in it. It all matters. Everything matters.
+– Nik Göke 
+
+> We do not rise to the level of our goals, we fall to the level of our systems.
+– James Clear
+
+> Death is what gives life meaning. Deadlines are what gives art meaning.
+– Nik Göke 
+
+> We need to collectively dream bigger—and this starts with believing that a better future is possible.
+– Elliot Hershberg
+
+> Let’s imagine though that the chat-style interface, powering advanced sentence completion, improved grammar and rephrasing, text summarisation, concept extraction, and image and video generation, is plugged directly into Microsoft’s Office products. Accessible to 1.2bn humans. How can we possibly begin to imagine what kind of impact that might have?...
+– Azeem Azhar 
+
+> What an astonishing thing a book is. It’s a flat object made from a tree with flexible parts on which are imprinted lots of funny dark squiggles. But one glance at it and you’re inside the mind of another person, maybe somebody dead for thousands of years. Across the millennia, an author is speaking clearly and silently inside your head, directly to you. Writing is perhaps the greatest of human inventions, binding together people who never knew each other, citizens of distant epochs. Books break the shackles of time. A book is proof that humans are capable of working magic.
+– Carl Sagan
+
+> I’m a person who’s only satisfied if I feel I’m being productive. I like figuring things out. I like making things. And I want to do as much of that as I can.
+– Stephen Wolfram
+
+> If you’re dissatisfied with your current life, ask yourself what your current life is a metaphor for. That metaphor will point you toward your true calling.
+– Steven Pressfield
+
+> Ambition, I have come to believe, is the most primal and sacred fundament of our being. To feel ambition and to act upon it is to embrace the unique calling of our soul. Not to act upon that ambition is to turn our back on ourselves and on the reason for our existence.
+– Steven Pressfield
+
+> Meaning is not something you stumble across, like the answer to a riddle or the prize in a treasure hunt. Meaning is something you build into your life. You build it out of your own past, out of your affections and loyalties, out of the experience of humankind as it is passed on to you, out of your own talent and understanding, out of the things you believe in, out of the things and people you love, out of the values for which you are willing to sacrifice something. The ingredients are there. You are the only one who can put them together into that unique pattern that will be your life. Let it be a life that has dignity and meaning for you. If it does, then the particular balance of success or failure is of less account. 
+– John W. Gardner
+
+> We have to believe in ourselves, but we mustn’t suppose that the path will be easy, it’s tough. Life is painful, and rain falls on the just. 
+– John W. Gardner
+
+> For renewal, a tough-minded optimism is best. The future is not shaped by people who don’t really believe in the future. Men and women of vitality have always been prepared to bet their futures, even their lives, on ventures of unknown outcome. If they had all looked before they leaped, we would still be crouched in caves sketching animal pictures on the wall. 
+– John W. Gardner
+
+
+> There are men and women who make the world better just by being the kind of people they are.
+– John W. Gardner
+
+> You have to build meaning into your life, and you build it through your commitments — whether to your religion, to an ethical order as you conceive it, to your life’s work, to loved ones, to your fellow humans. Young people run around searching for identity, but it isn’t handed out free any more — not in this transient, rootless, pluralistic society. Your identity is what you’ve committed yourself to.
+– John W. Gardner
+
+> You never get the impression that a cow is about to have a nervous breakdown. Or is puzzling about the meaning of life.
+– John W. Gardner
+
+> There is no perfection of techniques that will substitute for the lift of spirit and heightened performance that comes from strong motivation, The world is moved by highly motivated people, by enthusiasts, by men and women who want something very much or believe very much.
+– John W. Gardner
+
+> But life isn’t a mountain that has a summit, Nor is it — as some suppose — a riddle that has an answer. Nor a game that has a final score. Life is an endless unfolding, and if we wish it to be, an endless process of self-discovery, an endless and unpredictable dialogue between our own potentialities and the life situations in which we find ourselves.
+– John W. Gardner
+
+> Learn all your life. Learn from your failures. Learn from your successes, When you hit a spell of trouble, ask “What is it trying to teach me?”
+– John W. Gardner
+
+> Our parents and the society at large have a hand in building our prisons.
+– John W. Gardner
+
+> Life is the art of drawing without an eraser.
+– John W. Gardner
+
+> Writing is the process by which you realize that you do not understand what you are talking about. Importantly, writing is also the process by which you figure it out.
+– Shane Parrish
+
+> Have a reputation for pushing people hard enough that they accomplish more than they thought they could, but not so hard they burn out.
+ – Sam Altman
+
+> It is hard to be wildly successful at anything you aren’t obsessed with.
+ – Sam Altman
