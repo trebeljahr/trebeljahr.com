@@ -1,0 +1,843 @@
+Drink – Iain Gatley 
+
+System Design Interview – Alex Xu
+
+The Chimp Paradox – Steve Peters
+
+Quiet – Susan Cain
+
+Daring Greatly – Brené Brown
+
+No Boundary – Ken Wilber
+
+Accelerando – Charles Stross
+
+At Home in the Universe – Stuart Kauffmann 
+
+Stolen Focus – Johann Hari
+
+Dopamine Nation – Anna Lembke
+
+Start small, stay small – Rob Walling
+
+Words that Work – Frank Luntz
+
+The Meaning of It All – Richard Feynman
+
+The Philosophy of Albert Einstein – Albert Einstein
+
+Falling Upward – Richard Rohr
+
+Lila – Robert Pirsig
+
+Big Magic – Elizabeth Gilbert
+
+Story – Robert Mc Kee
+
+Born to Run – Christopher Mc Dougall
+
+Scar Tissue – Anthony Kiedis
+
+The Game – Neil Strauss
+
+Supernormal Stimuli – Deirdre Barrett
+
+Character Strengths and Virtues – Chris Peterson
+
+The Harried Leisure Class – Staff an Burenstamm Lindner
+
+Discworld – Terry Pratchett
+
+Mind and Cosmos – Thomas Nagel
+
+The Social Construction of Reality – Berger and Luckmann
+
+On the Principles of Political Economy and Taxation – David Ricardo
+
+The Pinch – David Willets
+
+Founders at Work – Philip Greenspun
+
+Ubik – Philip K. Dick
+
+Blindsight – Peter Watts
+
+Die Muminfamilie – Tove Jahnsson
+
+Solaris (German Translation) – Stanislav Lemm
+
+The Creature from Jekyll Island – Edward Griffin
+
+Lying for Money – Dan Davies
+
+The Rise and Decline of Nations – Mancur Olson
+
+What is Life – Schrodinger
+
+Skunk Works – Ben R. Rich
+
+Our Mathematical Universe – Max Tegmark
+
+Overcoming Gravity: A Systematic Approach to Gymnastics and Bodyweight Strength – Steven Low
+
+Refactoring UI – Steven Wathan
+
+A Genetic Switch – Ptashne
+
+Entire Ray tracing in a Weekend – Peter Shirley
+
+Descriptive Inorganic Chemistry – Geoff Rayner Canham
+
+Stuff Matters – Mark Miodownik
+
+Don't Make Me Think – Steve Krug
+
+The Design of Everyday Things – Don Norman
+
+Sync – Steven Strogatz
+
+Financial Shenanigans – Howard Schilit
+
+The Algorithm Design Manual – Skeina
+
+The Code Book – Simon Singh
+
+Principles of Neural Design – Peter Sterling
+
+Phantoms in the Brain – Sarah Blakeslee
+
+An Introduction to General Systems Thinking – Gerald M. Weinberg
+
+Code: The Hidden Language of Computer Hardware and Software – Charles Petzold
+
+Poor Economics – Esther Duflo
+
+Seeing Like a State – James C. Scott
+
+The Art of Stillness – Pico Iyer
+
+Merchants of Doubt – Erik M. Conway
+
+How to Lie with Statistics – Darrell Huff
+
+Bad Science – Ben Goldacre
+
+Exponential – Azeem Azhar
+
+All the mathematics you missed but need to know in grad school – Thomas A. Garrity
+
+City of Joy – Dominique la Piré
+
+Think like a monk – Jay Shetty
+
+Feluda — Sonar Killa – Satyajit Roy
+
+Having No Head – Douglas Harding
+
+Mastery – Robert Greene
+
+Memory and Forgetting – Herrmann Ebbinghaus
+
+Elements of Psychophysics – Gustav Fechner
+
+Mindhacker – Ron and Marty Hale Evans
+
+Fluent Forever: How to Learn any Language and Never forget it – Gabriel Wyner
+
+Seeking Wisdom: From Darwin to Munger – Peter Bevelin
+
+Project Lightspeed – Empfehlung von Henry
+
+Blood and Soul: A world history of genocide and extermination from Sparta to Darfur – Ben Kiernan
+
+Humanity: A moral history of the Twentieth Century – Jonathan Glover
+
+The Origin of Financial Crises – George Cooper
+
+Software is People – Pauline Oliveros
+
+Code Complete – Steve McConnell
+
+The Masters of Doom – David Kushner
+
+A wavelet tour of signal processing – Stéphane Mallat
+
+Ten Lectures on Wavelets – Ingrid Daubechies
+
+Spacetime and Geometry: An Introduction to General Relativity – Sean M. Carroll
+
+The Prometheus Project – Douglas E. Richards
+
+The Minds Eye – Daniel Danett, Douglas Hofstaedter
+
+The Book of Why – Dana Mackenzie
+
+Probabilistic Reasoning and Intelligent Systems – Judea Pearl
+
+Data Driven Science and Engineering – Steven L. Brunton
+
+The Fourth Paradigm – Tony Hey, Stewart Tansley, and Kristin Tolle
+
+Think Limbic – Hans-Georg Häusel
+
+The Diffusion of Innovation – Edward Rogers
+
+The Rise of Meritocracy – Michael Young
+
+What Technology Wants – Kevin Kelly
+
+In Liberty – John Stuart Mills
+
+Feeling Good – David D. Burns
+
+Free Range Kids – Lenore Skenazy
+
+Concept of Corporation – Peter Drucker
+
+The practice of Management – Peter Drucker
+
+Managing for Results – Peter Drucker
+
+Organizational culture and Leadership – John kotter
+
+Corporate culture and performance – James Heskett
+
+Das Imperium der Schande – Jean Ziegler
+
+The better angels of our nature – Steven Pinker
+
+Vernetztes Denken – Frederick Vester
+
+Entdecken, Erfinden, Erforschen – Fritz Zwicky
+
+Autobiography – Ben Franklin
+
+Management – Philip Kotler
+
+Marketing Management – Koutsiyanis
+
+Ordinary Differential Equations – Tenebaum, Pollard
+
+Radical Abundance – Eric Drexler
+
+The code of the extraordinary mind – Vishen Lakhiani
+
+The Happiness Hypothesis – Jonathan Haidt
+
+The Elephant in The Brain – Kevin Simler
+
+The role of deliberate practice in the acquisition of Expert performance – Anders Erricson
+
+The 4 disciplines of Execution – Clayton Christensen
+
+The wise man – Walter Isaacson
+
+Give and Take – Adam Grant
+
+Rapt – Winifred Gallagher
+
+Willpower – Roy Baumeister
+
+Average is Over – George Mason
+
+All things Shining – Dreyfus, Kelly
+
+The intellectual life – Sertillanges
+
+What is life – Erwin Schrödinger
+
+Principles of Biochemistry – Albert Lehninger
+
+Information Theory and Evolution – John Avery
+
+Gifts Differing: Understanding Personality Type –  Isabel Briggs Myers
+
+Turtles, Termites, and Traffic Jams –  Mitchel Resnick
+
+A History Of Western Philosophy – Bertrand Russell
+
+Sophie's World – Jostein Gaarder
+
+Meditations – Marcus Aurelius
+
+Zen and The Art of Motorcycle Maintenance – Robert Pirsig
+
+Gorgias – Plato
+
+Meno – Plato
+
+Theatetus  – Plato
+
+Sophis – Plato
+
+Symposium – Plato
+
+Phaedrus – Plato
+
+Timaeus – Plato
+
+The Republic – Plato
+
+Physics – Aristotle
+
+Ethics – Aristotle
+
+Poetics – Aristotle
+
+Metaphysics – Aristotle
+
+On Logic – Aristotle
+
+Categories – Aristotle
+
+On The Soul – Aristotle
+
+The essential Epicurus – Epicurus
+
+Critique of Pure Reason – Emmanuel Kant
+
+Essays – Montaigne
+
+Beyond Good And Evil – Nietzsche
+
+Meditations on First Philosophy – Rene Descartes
+
+The Prince – Machiavelli
+
+Being and Nothingness – Jean Paul Sartre
+
+The Myth of Sisyphus and Other Essays – Albert Camus
+
+A Treatise of Human Nature – David Hume
+
+Tao Te Ching – Lao Tzu
+
+The Art Of War – Sun Tzu
+
+Analects – Confuscius
+
+The Book of Healing – Avicenna
+
+The Transcendent Philosophy of the Four Journeys of the Intellect – Mulla Sadra
+
+Nudge – Cass Sunstein
+
+Buddhas Brain – Rick Hanson
+
+Bodhisattva’s Brain: Buddhism Naturalized – Owen Flanagan
+
+Free To Choose – Milton Friedman
+
+Choice and Consequences – Thomas Schelling
+
+The Mythical Man Month – Fred Brooks
+
+A random walk down wall Street – Burton Malkien
+
+Judgement in Managerial Decision Making – Max Bazerman
+
+The Halo effect – Philip Rosenzweig
+
+Clinical Vs. Statistical Prediction – Paul Meehl
+
+Expert Political Judgement – Philip Tetlock
+
+The Robust Beauty of Improper Linear Models in Decision Making – Robyn Dawes
+
+Beyond religion – Dalai Lama
+
+A whole new mind – Steven Pinker
+
+The Spiritual Brain –  Denyse O'Leary and Mario Beauregard
+
+The Meaning of Human Existence – Edward o' Wilson
+
+An Everyone Culture – Bob Kegan
+
+Incognito – David Eagleman
+
+Subliminal – Leonard Mlodinow
+
+A guide to the good life – William Irvine
+
+The pragmatic programmer – Andrew Hunt
+
+The little schemer – Daniel Friedman
+
+Made to stick – Chip Heath
+
+Writing well – William Zinsser
+
+The Elements of Style – William Strunk
+
+Revising Prose – Richard Lanham
+
+The Gene Machine – Venki Ramakrishnan
+
+Darm mit Charme – Giulia Enders
+
+Letters of Note: An Eclectic Collection of Correspondence Deserving of a Wider Audience – Shaun Usher
+
+Existentialism from Dostoevsky to Sartre – Walter Kaufmann
+
+Being And Nothingness – Jean Paul Sartre
+
+The Accidental Universe: The World You Thought You Knew – Alan Lightman
+
+The Better Angels of our Nature – Steven Pinker
+
+The Blank Slate – Steven Pinker
+
+How The mind works – Steven Pinker
+
+The Language Instinct – Steven Pinker
+
+The Mathematics of Divorce – John Gottman
+
+Strangers to Ourselves – Timothy D. Wilson
+
+The End of Man – Alfven Hannes
+
+Kings who die – Anderson Poul
+
+The Anthropic Cosmological Principle – Barrow John, Frank J. Tipler
+
+Seven Clues to the Origin of Life – Cairns Smith
+
+Towards an Artifical Brain – Conrad Michael
+
+Engines of Creation – Eric Drexler
+
+Infinite in All Directions – Dyson Freeman
+
+Dune – Herbert Frank
+
+Microcosmos – Margulis, Lynn, Dorion Sagan
+
+Society of Mind – Marvin Minsky
+
+Mind Children – Hans Moravec
+
+The Ethics Of Madness – Larry Niven
+
+The Emperors New Mind – Roger Penrose
+
+Minds Brains and Programs – John R. Searle
+
+Interactive Evolution of Dynamical Systems – Sims Karl
+
+The Starmaker – Stapledon Olaf
+
+The Coming of the Golden Age – Stent Gunther
+
+Vacuum Flowers – Swanwick Michael
+
+Bookworm Run – Vernor Vinge
+
+True Names – Vernor Vinge
+
+First Word Omni – Vernor Vinge
+
+Start with why – Simon Sinek
+
+Anger Mercy Revenge – Seneca
+
+Strangers in Ourselves – Timothy Wilson
+
+On the Shortness of Life – Seneca
+
+Letters from a Stoic: Epistulae Morales – Lucilium Seneca
+
+Poor Charlies Almanack – Charlie Munger
+
+Howard Hughes His Life and Madness – Donald L. Barlett
+
+Psychopolitics – Rene Girard
+
+Seeking Wisdom – Peter Bevelin
+
+New Atlantis – Francis Bacon
+
+The American Challenge – Jean Jaques
+
+The Great Illusion: A Study of the Relation of Military Power to National Advantage – Norman Sir Angell
+
+The Art of War – Sun Tzu
+
+The Diamond Age Or A Young Lady's Illustrated Primer – Neil Stephenson
+
+Bloodlands – Timothy Snyder
+
+Resurrection from the Underground – Rene Girard
+
+100 Plus – Sonia Arrison
+
+The Moon is a Harsh Mistress – Robert Heinlein
+
+Stranger in a Strange Land – Robert Heinlein
+
+Structures or Why things don't fall down – J. E. Gordon
+
+The Quest for Artificial Intelligence: A History of Ideas and Achievements – Nils Nilsson
+
+Principles – Ray Dalio
+
+The world before yesterday – Jared Diamond
+
+Getting to yes – Roger Fischer
+
+In Search of identity – Anwar Sadat
+
+The Universe and The Teacup – K. C. Cole
+
+Engines of Creation – Eric Drexler
+
+The Secret Language Of Color – Arielle Eckstut
+
+Reality is not what it seems – Carlo Rovelli
+
+The Science Book – Dorlin Kindersley
+
+The Elements – Theodore Grey
+
+Stuff Matters – Mark Miodowink
+
+Packing for Mars – Mary Roach
+
+How to Speak Science – Bruce Benamran
+
+Fruit and Seeds – Rob Kesseler
+
+Light The Invisible Spectrum and Beyond –  Kimberly Arcand
+
+Earth And Space – Nirmala Nataraj
+
+Things To Make And do in The Fourth Dimension – Matt Parker
+
+Why Beliefs Matter – E. Brian Davis
+
+The Outer Limits of Reason – Noson Yanofsky
+
+The Pea and The Sun – Lennard Wagner
+
+Hatching Twitter – Nick Bilton
+
+Antifragile – Nassim Nicholas Taleb
+
+Skin in the Game – Nassim Nicholas Taleb
+
+Fooled by Randomness – Nassim Nicholas Taleb
+
+The Big Short – Michael Lewis
+
+In the Plex – Steven Levy
+
+A short History of Nearly Everything – Bill Bryson
+
+The Writing Life – Annie Dillard
+
+The Wealth and Poverty of Nations – David S. Landes
+
+Das Kaffee am Rande der Welt – John Strelecky
+
+Guy Kawasaki – Rules for Revolutionaries
+
+The human side of Enterprise – Mc Gregor
+
+Predictably Irrational – Dan Ariely
+
+Punished by Rewards – Alfie Kohn
+
+Behave – Robert M. Sapolsky
+
+Educated – Tara Westover
+
+Army of None – Paul Scharre
+
+Bad Blood – John Carreyrou
+
+21 Lessons for the 21st Century – Yuval Noah Harari
+
+The Headspace Guide to Meditation and Mindfulness – Andy Puddicombe
+
+Darwins Cathedral – David Sloan Wilson
+
+Body by science – Doug Mc Guff
+
+The new evolution diet – Arthur De Vany
+
+Uniquity – Mark Buchanan
+
+Why most things fail – Paul Ormerod
+
+Critical Mass – Philipp Ball
+
+The fractal geometry of nature – Benoit Mandelbrot
+
+The Stranger – Albert Camus
+
+Kaffka on the shore – Murakami
+
+Siddhartha – Herman Hesse
+
+A History of time – Stephen Hawking
+
+Geist, Intelligenz – Arthur Schopenhauer
+
+Illusion – Richard Barker
+
+Relativity simply explained – Martin Gardner
+
+Relativity visualized – Lewis Carroll Epstein
+
+Spacetime Physics – W.H. Freeman
+
+The mathematical theory of communication – Shannon, Weaver
+
+Genius: The Life and Science of Richard Feynman – James Gleick
+
+Faster: The Acceleration of Just About Everything – James Gleick
+
+Gödels Proof – Ernest Nagel, James Newman
+
+The Lean Startup – Eric Ries
+
+All Marketers are Liars – Seth Godin
+
+Andrew Carnegie – David Nasaw
+
+As a Man thinketh – James Allen
+
+Big Magic – Elizabeth Gilbert
+
+Book yourself Solid – Michael Port
+
+Conscious Capitalism – John Mackey
+
+Contagious – Jonah Berger
+
+David and Goliath – Malcolm Gladwell
+
+Deep Work – Cal Newport
+
+Drive – Daniel H. Pink
+
+Eat that frog – Brian Tracy
+
+Essentialism – Greg MC. Keown
+
+Give and Take – Adam Grant
+
+Good to Great – Jim Collins
+
+Built To Last – Jim Collins
+
+Grit – Angela Duckworth
+
+Hooked – Nir Eyal
+
+Influence – Robert B. Cialdini
+
+Linchpin – Seth Godin
+
+Originals – Adam Grant
+
+Radical Focus – Christina R. Wotdke
+
+Reality Check – Guy Kawasaki
+
+Shantaram – Gregory David Roberts
+
+So good they can not ignore you – Cal Newport
+
+Surely you are joking Mr. Feynmann – Richard Feynmann
+
+The 4 hour-workweek – Timothy Ferris
+
+The Art of travel – Alain de Botton
+
+The Checklist Manifesto – Atul Gawande
+
+Street Smarts – Norm Brodsky
+
+The Productivity Project – Chris Bailey
+
+Think and Grow rich – Napoleon Hill
+
+Tribe – Sebastian Junger
+
+Vagabonding – Rolf Potts
+
+Breakthrough Advertising – Eugene Schwartz:
+
+Crossing the Chasm – Geoffrey Moore:
+
+Kritische Theorie – Michael Schwandt:
+
+Das Kapital – Karl Marx
+
+Dialektik – Hegel
+
+Dialog der Rhetorik – Platon
+
+Zen and the Art of motorcycle repairment – Robert Pirsig
+
+Slaughterhouse-Five: The Children's crusade – Kurt Vonnegut
+
+New Pathways in science – Arthur Eddington
+
+The time machine – H.G. Wells
+
+The Island of Doctor Moreau – H.G. Wells
+
+The world set free – H.G. Wells
+
+Daedalus or Science and the future – J.B.S Haldane
+
+Brave New World – Aldous Huxley
+
+Last and first men – Olaf Stapledon
+
+The world the flesh and the devil – Desmond Bernal
+
+A Dialogue on Personal Identity and Immortality – John Perry
+
+The Death of Ivan Ilych – Leo Tolstoy
+
+Metaphorically selling – Lee Iacocca
+
+Mindset – Carol Dweck
+
+How children succeed – Paul Tough
+
+The making of the Atomic bomb – Richard Rhodes
+
+The righteous mind – Jonathan Haidt
+
+Oxygen – Nick Lane
+
+Measurement – Paul Lockhart
+
+The Art of Problem Solving – Richard Rusczyk and Sandor Lehoczky
+
+The Structure of Scientific Revolutions – Thomas Kuhn
+
+Basic Economics – Thomas Sowells
+
+The Outsiders – William Thorndike
+
+How to Fail at Everything and Still Win Big – Scott Adams
+
+Skin in the Game – Nassim Taleb
+
+Shoe Dog – Phil Knight
+
+The Elements of Style – William Strunk
+
+Liar’s Poker – Micheal Lewis
+
+Zero to One – Peter Thiel
+
+Big Magic – Gilbert
+
+The Hard Thing About Hard Things – Horowitz
+
+Man’s Search for Meaning – Viktor Frankl
+
+Benjamin Franklin: An American Life – Walter Isaacson
+
+Thinking, Fast and Slow – Daniel Kahneman
+
+Sapiens –  Yuval Noah Harari
+
+Be a Writing Machine – M.L Ronn
+
+The Art of Strategy – Avinash K. Dixit, Barry Nalebuff
+
+Six Easy Pieces – Richard Feynman
+
+The Fish That Ate the Whale – Rich Cohen
+
+World Order – Henry Kissinger
+
+Churchill. A life – Martin Gilbert
+
+Poorly made in China – Paul Midler
+
+Dispatches – Michael Herr
+
+Diet Recovery – Matt Stone
+
+Math. Foundation of Quantum mechanics – John  von Neumann
+
+Law of Success – Robert Hill
+
+ReWork: Change the Way You Work Forever – Jason Fried
+
+Remote: Office Not Required – Jason Fried
+
+Getting Real: The smarter, faster, easier way to build a successful web application – Jason Fried
+
+Flow: The Psychology of Optimal Experience – Csikszentmihalyi
+
+Blink – Malcolm Gladwell
+
+Stumbling on Happiness – Gilbert
+
+A Field Guide to Getting Lost – Solnit
+
+The Subtle Art of Not Giving a Fuck – Mark Manson
+
+The Way to Love – Anthony de Mello
+
+But What If we're wrong – Chuck Klosterman
+
+Rules for Radicals – Saul Alinsky
+
+Filter Bubble – Eli Pariser
+
+The Brass Check – Upton Sinclair
+
+48 Laws of Power, 33 Strategies of War – Robert Greene
+
+Conspiracy – Ryan Holiday
+
+The Road To Character – David Brooks
+
+The Dip – Seth Godin
+
+It Can't happen Here – Sinclair Lewis
+
+How to live – Sarah Bakewell
+
+The Years of Lyndon Johnson – Robert A Caro
+
+The Last Lion – William Manchester
+
+Mr. Eternity – Aaron Their
+
+Count of Monte Cristo – Alexandre Dumas
+
+Not Fade Away – Laurence Shames
+
+The obstacle is the way – Ryan Holiday
+
+Data and Goliath – Bruce Schneier
+
+Superflow and Vortex Lines – Hagen Kleinert
+
+Gauge Fields in Condensed Matter – Anatoly Larkin, Andrei Varlamov
+
+Theory of Fluctuations in Superconductors – Anatoly Larkin and Andrey Varlamov
+
+The Physics of Organic Superconductors and Conductors – Jean Matricon, Georges Waysand
+
+The Cold Wars: A History of Superconductivity – Michael Tinkham
+
+Introduction to Superconductivity – Terry Orlando, Kevin Delin
+
+Foundations of Applied Superconductivity – Paul Tipler, Ralph Llewellyn
+
+Modern Physics (4th ed.) –  W. H. Freeman
+
+How to Read a Book: The Classic Guide to Intelligent Reading – Mortimer J. Adler

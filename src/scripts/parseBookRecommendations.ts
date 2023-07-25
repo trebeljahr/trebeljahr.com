@@ -2,30 +2,35 @@ import { count } from "console";
 import fs from "fs";
 import path from "path";
 
-interface Book {
+interface Recommendation {
   title: string;
   author: string;
-  recommendationSource: string;
+  recommendationSource: string[];
+  count: number;
 }
 
-const parseBookRecommendation = (content: string, filePath: string): Book[] => {
+const parseBookRecommendation = (
+  content: string,
+  filePath: string
+): Recommendation[] => {
   const regex = /\*\*Book Recommendation:\*\* ([^–\n]+) (– [^\n]+)?/g;
-  const books: Book[] = [];
+  const books: Recommendation[] = [];
 
   [...content.matchAll(regex)].forEach((match) => {
     books.push({
       title: match[1].trim(),
       author: match[2]?.replace("–", "").trim(),
-      recommendationSource: filePath,
+      recommendationSource: [filePath],
+      count: 1,
     });
   });
 
   return books;
 };
 
-const extractBooksFromDirectory = (dirPath: string): Book[] => {
+const extractBooksFromDirectory = (dirPath: string): Recommendation[] => {
   const files = fs.readdirSync(dirPath);
-  let allBooks: Book[] = [];
+  let allBooks: Recommendation[] = [];
 
   for (const file of files) {
     const filePath = path.join(dirPath, file);
@@ -37,7 +42,24 @@ const extractBooksFromDirectory = (dirPath: string): Book[] => {
   return allBooks;
 };
 
-const sortBooks = (books: Book[]): Book[] => {
+const booksFromAntiLibrary = (): Recommendation[] => {
+  const content = fs.readFileSync("./antilibrary.txt", "utf8");
+
+  const lines = content.split("\n").filter((line) => line !== "");
+  const books = lines.map((line) => {
+    const book = line.split("–");
+    return {
+      title: book[0]?.trim(),
+      author: book[1]?.trim(),
+      recommendationSource: ["antilibrary"],
+      count: 1,
+    };
+  });
+
+  return books;
+};
+
+const sortBooks = (books: Recommendation[]): Recommendation[] => {
   return Object.values(books).sort((a, b) => {
     const authorComparison = a.author.localeCompare(b.author);
     if (authorComparison !== 0) {
@@ -48,27 +70,47 @@ const sortBooks = (books: Book[]): Book[] => {
   });
 };
 
-const countBooks = (books: Book[]) => {
-  const bookCounts: { [key: string]: Book & { count: number } } = {};
+const sortBooksByCount = (books: Recommendation[]): Recommendation[] => {
+  return Object.values(books).sort((a, b) => {
+    if (a.count === undefined || b.count === undefined) {
+      return 0;
+    }
+    return b.count - a.count;
+  });
+};
+
+const countBooks = (books: Recommendation[]) => {
+  const bookCounts: { [key: string]: Recommendation } = {};
 
   for (const book of books) {
     const uniqueKey = `${book.title}-${book.author}`.toLowerCase();
 
     if (bookCounts[uniqueKey]) {
       bookCounts[uniqueKey].count++;
+      bookCounts[uniqueKey].recommendationSource.push(
+        book.recommendationSource[0]
+      );
     } else {
-      bookCounts[uniqueKey] = { ...book, count: 1 };
+      bookCounts[uniqueKey] = {
+        ...book,
+        count: 1,
+      };
     }
   }
 
   return Object.values(bookCounts);
 };
-const books = extractBooksFromDirectory("../content/booknotes");
+const fromNotes = extractBooksFromDirectory("../content/booknotes");
+const fromAntilibrary = booksFromAntiLibrary();
+const books = [...fromNotes, ...fromAntilibrary];
+
+console.log(fromAntilibrary);
+
 // console.log(books);
-// console.log(
-//   "without author",
-//   books.filter((book) => book.author === undefined)
-// );
+console.log(
+  "without author",
+  books.filter((book) => book.author === undefined)
+);
 
 const sortedBooks = sortBooks(books);
 // console.log(sortedUniqueBooks);
@@ -76,9 +118,12 @@ const sortedBooks = sortBooks(books);
 const number = countBooks(sortedBooks);
 console.log(number);
 
+const sortedBooksByCount = sortBooksByCount(number);
+console.log(sortedBooksByCount.splice(0, 10));
+
 const howManyBooks = number.reduce((acc, book) => {
   return acc + book.count;
 }, 0);
 
-console.log(books.length);
+console.log(fromNotes.length);
 console.log(howManyBooks);
