@@ -31,6 +31,7 @@ export const PostCoverImage = ({
 };
 
 export const BookCover = ({ title, src, priority }: Props) => {
+  console.log(src);
   return (
     <Image
       src={src}
@@ -43,6 +44,7 @@ export const BookCover = ({ title, src, priority }: Props) => {
         width: "100%",
         height: "auto",
       }}
+      unoptimized={src?.startsWith("http://") || src?.startsWith("https://")}
     />
   );
 };

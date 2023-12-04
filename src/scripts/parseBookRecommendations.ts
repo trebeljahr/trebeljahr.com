@@ -1,6 +1,9 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
+import { getBookInfo } from "./getBookInfo";
+import { writeFile } from "fs/promises";
+import { chromium } from "@playwright/test";
 
 interface Recommendation {
   title: string;
@@ -89,7 +92,7 @@ const sortBooksByCount = (books: Recommendation[]): Recommendation[] => {
   });
 };
 
-const countBooks = (books: Recommendation[]) => {
+const summarizeBookRecommendations = (books: Recommendation[]) => {
   const bookCounts: { [key: string]: Recommendation } = {};
 
   for (const book of books) {
@@ -97,9 +100,12 @@ const countBooks = (books: Recommendation[]) => {
 
     if (bookCounts[uniqueKey]) {
       bookCounts[uniqueKey].count++;
-      bookCounts[uniqueKey].recommendationSource.push(
-        book.recommendationSource[0]
-      );
+      const recommendationSources = bookCounts[uniqueKey].recommendationSource;
+      if (recommendationSources.includes(book.recommendationSource[0])) {
+        console.log("Duplicate recommendation: ", book);
+      }
+
+      recommendationSources.push(book.recommendationSource[0]);
     } else {
       bookCounts[uniqueKey] = {
         ...book,
@@ -116,9 +122,37 @@ const fromNotes = extractBooksFromDirectory(booknotePath);
 const fromAntilibrary = booksFromAntiLibrary();
 const books = [...fromNotes, ...fromAntilibrary];
 const sortedBooks = sortBooks(books);
-const countedBooks = countBooks(sortedBooks);
+const countedBooks = summarizeBookRecommendations(sortedBooks);
 
 const sortedBooksByCount = sortBooksByCount(countedBooks);
+
+const browser = await chromium.launch();
+const context = await browser.newContext();
+const page = await context.newPage();
+
+const sortedBooksByCountWithInfo = await Promise.all(
+  sortedBooksByCount.map(async (book) => {
+    const bookInfo = await getBookInfo(book.title, book.author, page);
+    return {
+      ...book,
+      ...bookInfo,
+    };
+  })
+);
+
+console.log(sortedBooksByCountWithInfo.slice(0, 10));
+
+const recommendationsPath = path.join(
+  process.cwd(),
+  "src",
+  "scripts",
+  "bookRecommendations.json"
+);
+
+await writeFile(
+  recommendationsPath,
+  JSON.stringify(sortedBooksByCountWithInfo, null, 2)
+);
 
 console.log("Amount of recommendations: ", sortedBooksByCount.length);
 console.log("Most recommended: ", sortedBooksByCount[0]);

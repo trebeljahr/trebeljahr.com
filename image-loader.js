@@ -1,6 +1,8 @@
 export default function myLoader({ src, width, quality }) {
-  if (quality) {
+  if (src.startsWith("https://") || src.startsWith("http://")) return src;
+
+  if (quality)
     return `https://${process.env.NEXT_PUBLIC_CLOUDFRONT_ID}.cloudfront.net${src}?format=auto&quality=${quality}&width=${width}`;
-  } else
+  else
     return `https://${process.env.NEXT_PUBLIC_CLOUDFRONT_ID}.cloudfront.net${src}?format=auto&width=${width}`;
 }

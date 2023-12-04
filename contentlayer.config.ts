@@ -208,7 +208,7 @@ export const Page = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "src/content",
-  contentDirExclude: ["pages/quotes.json"],
+  contentDirExclude: ["pages/quotes.json", "email-templates"],
   documentTypes: [Post, Page, Newsletter, Booknote, Podcastnote],
   mdx: {
     remarkPlugins: [
