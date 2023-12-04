@@ -1,5 +1,5 @@
-import { count } from "console";
 import fs from "fs";
+import matter from "gray-matter";
 import path from "path";
 
 interface Recommendation {
@@ -16,11 +16,15 @@ const parseBookRecommendation = (
   const regex = /\*\*Book Recommendation:\*\* ([^–\n]+) (– [^\n]+)?/g;
   const books: Recommendation[] = [];
 
+  const {
+    data: { title },
+  } = matter(content);
+
   [...content.matchAll(regex)].forEach((match) => {
     books.push({
       title: match[1].trim(),
       author: match[2]?.replace("–", "").trim(),
-      recommendationSource: [filePath],
+      recommendationSource: [title],
       count: 1,
     });
   });
@@ -43,7 +47,13 @@ const extractBooksFromDirectory = (dirPath: string): Recommendation[] => {
 };
 
 const booksFromAntiLibrary = (): Recommendation[] => {
-  const content = fs.readFileSync("./antilibrary.txt", "utf8");
+  const antiLibrarySrcPath = path.join(
+    process.cwd(),
+    "src",
+    "scripts",
+    "antilibrary.txt"
+  );
+  const content = fs.readFileSync(antiLibrarySrcPath, "utf8");
 
   const lines = content.split("\n").filter((line) => line !== "");
   const books = lines.map((line) => {
@@ -100,30 +110,15 @@ const countBooks = (books: Recommendation[]) => {
 
   return Object.values(bookCounts);
 };
-const fromNotes = extractBooksFromDirectory("../content/booknotes");
+
+const booknotePath = path.join(process.cwd(), "src", "content", "booknotes");
+const fromNotes = extractBooksFromDirectory(booknotePath);
 const fromAntilibrary = booksFromAntiLibrary();
 const books = [...fromNotes, ...fromAntilibrary];
-
-console.log(fromAntilibrary);
-
-// console.log(books);
-console.log(
-  "without author",
-  books.filter((book) => book.author === undefined)
-);
-
 const sortedBooks = sortBooks(books);
-// console.log(sortedUniqueBooks);
+const countedBooks = countBooks(sortedBooks);
 
-const number = countBooks(sortedBooks);
-console.log(number);
+const sortedBooksByCount = sortBooksByCount(countedBooks);
 
-const sortedBooksByCount = sortBooksByCount(number);
-console.log(sortedBooksByCount.splice(0, 10));
-
-const howManyBooks = number.reduce((acc, book) => {
-  return acc + book.count;
-}, 0);
-
-console.log(fromNotes.length);
-console.log(howManyBooks);
+console.log("Amount of recommendations: ", sortedBooksByCount.length);
+console.log("Most recommended: ", sortedBooksByCount[0]);

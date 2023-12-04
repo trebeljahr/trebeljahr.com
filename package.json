@@ -10,7 +10,8 @@
     "uploadWithMetadataToS3": "tsx src/scripts/aws/uploadWithMetadataToS3.ts",
     "warmupS3Cache": "tsx src/scripts/aws/warmupS3Cache.ts",
     "sendNewsletter": "tsx src/scripts/sendNewsletter.ts",
-    "createRedirects": "tsx src/scripts/createRedirects.ts"
+    "createRedirects": "tsx src/scripts/createRedirects.ts",
+    "parseBookRecommendations": "tsx src/scripts/parseBookRecommendations.ts"
   },
   "type": "module",
   "dependencies": {
