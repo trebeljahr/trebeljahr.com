@@ -1,9 +1,10 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import { getBookInfo } from "./getBookInfo";
+import { BookInfo, getBookInfo, getBookcoverUrl } from "./getBookInfo";
 import { writeFile } from "fs/promises";
 import { chromium } from "@playwright/test";
+import puppeteer from "puppeteer";
 
 interface Recommendation {
   title: string;
@@ -126,19 +127,48 @@ const countedBooks = summarizeBookRecommendations(sortedBooks);
 
 const sortedBooksByCount = sortBooksByCount(countedBooks);
 
-const browser = await chromium.launch();
-const context = await browser.newContext();
+const playwrightBrowser = await chromium.launch();
+const context = await playwrightBrowser.newContext();
 const page = await context.newPage();
 
-const sortedBooksByCountWithInfo = await Promise.all(
-  sortedBooksByCount.map(async (book) => {
-    const bookInfo = await getBookInfo(book.title, book.author, page);
-    return {
-      ...book,
-      ...bookInfo,
-    };
-  })
-);
+let sortedBooksByCountWithInfo: (BookInfo & Recommendation)[] = [];
+const browser = await puppeteer.launch({
+  headless: "new",
+  args: ["--no-sandbox", "--disable-setuid-sandbox"],
+});
+
+// const bookPromises = sortedBooksByCount.map(async (book) => {
+//   // const bookInfoPromise = getBookInfo(book.title, book.author, page);
+//   const coverUrlPromise = getBookcoverUrl(book.title, book.author, browser);
+
+//   const coverUrl = await coverUrlPromise;
+
+//   console.log(coverUrl);
+
+//   return {
+//     ...book,
+//     coverUrl,
+//     // ...(await bookInfoPromise),
+//   };
+// });
+
+// sortedBooksByCountWithInfo = await Promise.all(bookPromises);
+
+for (const book of sortedBooksByCount) {
+  // const bookInfo = await getBookInfo(book.title, book.author, page);
+  const coverUrl = await getBookcoverUrl(book.title, book.author, browser);
+
+  console.log(coverUrl);
+
+  sortedBooksByCountWithInfo.push({
+    ...book,
+    coverUrl,
+    // ...bookInfo,
+  });
+  // console.log(bookInfo.coverUrl);
+}
+
+await playwrightBrowser.close();
 
 console.log(sortedBooksByCountWithInfo.slice(0, 10));
 

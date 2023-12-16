@@ -34,7 +34,7 @@ export async function getPictureSrc(
   return src;
 }
 
-interface BookInfo {
+export interface BookInfo {
   isbn?: string;
   coverUrl?: string;
   olid?: string;
@@ -78,14 +78,93 @@ export async function getBookInfo(
       };
 
       if (!bookInfo.coverUrl) {
-        bookInfo.coverUrl = await getPictureSrc(title);
+        bookInfo.coverUrl = await getPictureSrc(page, title);
       }
+    } else {
+      console.warn("No book found for title:", title, "author:", author);
     }
 
-    console.warn("No book found for title:", title, "author:", author);
     return bookInfo;
   } catch (error) {
     console.error("Error fetching book information:", error);
     throw error;
   }
 }
+
+import puppeteer, { Browser } from "puppeteer";
+
+const GOODREAD_URL = "https://www.goodreads.com/book/show/";
+const GOODREAD_IMAGE_URL_PATTERN =
+  "https://images-na.ssl-images-amazon.com/images";
+
+export const getGoodreadsUrl = (data: string) => {
+  if (data === undefined) {
+    return null;
+  }
+  let init = find(data, GOODREAD_URL);
+  let final = find(data, "&", init + 10);
+  let url = data.slice(init, final);
+  return url;
+};
+
+export const getBookcoverUrl = async (
+  bookTitle: string,
+  authorName: string,
+  browser: Browser
+) => {
+  try {
+    const googleQuery = `${bookTitle} ${authorName} site:goodreads.com/book/show`;
+    const googleResponse = await axios.get(
+      `https://www.google.com/search?q=${googleQuery}&sourceid=chrome&ie=UTF-8`
+    );
+
+    const goodreadsUrl = getGoodreadsUrl(googleResponse.data);
+    if (!goodreadsUrl) {
+      throw new Error("No goodreads url found");
+    }
+    const url = await getImageUrl(goodreadsUrl, browser);
+    return url;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const find = (str: string, term: string, startsBy = 0) => {
+  if (str === undefined) {
+    return -1;
+  }
+  let len = 0;
+  let pos = null;
+  for (let i = startsBy; i < str.length; i++) {
+    if (str[i] == term[len]) len++;
+    else len = 0;
+    if (len == term.length) {
+      pos = i + 1 - term.length; //gets position i-term.length but has to add 1 given that startsBy has default value 0
+      break;
+    }
+  }
+  if (pos != null) return pos;
+
+  return -1;
+};
+
+export const getImageUrl = async (
+  goodreadsLink: string,
+  browser: Browser
+): Promise<string> => {
+  const page = await browser.newPage();
+  await page.goto(goodreadsLink);
+  const imageSelector = `img[src^="${GOODREAD_IMAGE_URL_PATTERN}"]`;
+  await page.waitForSelector(imageSelector, {
+    visible: true,
+  });
+  const src = await page.evaluate((selector) => {
+    const img: any = document.querySelector(selector);
+    if (!img) {
+      throw new Error("Image not found");
+    }
+    return img.src;
+  }, imageSelector);
+
+  return src;
+};

@@ -84,6 +84,7 @@
     "next-contentlayer": "^0.3.2",
     "next-transpile-modules": "^9.0.0",
     "postcss": "^8.4.23",
+    "puppeteer": "^21.5.2",
     "rehype-accessible-emojis": "^0.3.2",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-highlight": "^5.0.2",
