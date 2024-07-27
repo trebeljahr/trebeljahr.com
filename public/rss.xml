@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[Blog posts | RSS Feed]]></title>
-        <description><![CDATA[Welcome to this blog posts!]]></description>
+        <title><![CDATA[Rico Trebeljahr | RSS Feed]]></title>
+        <description><![CDATA[Welcome to this my posts and newsletters! Glad to have you here!]]></description>
         <link>http://localhost:3000</link>
         <image>
-            <url>http://localhost:3000/logo.jpeg</url>
-            <title>Blog posts | RSS Feed</title>
+            <url>http://localhost:3000/android-chrome-192x192.png</url>
+            <title>Rico Trebeljahr | RSS Feed</title>
             <link>http://localhost:3000</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 24 Jul 2024 20:47:37 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 27 Jul 2024 06:52:44 GMT</lastBuildDate>
         <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 24 Jul 2024 20:47:37 GMT</pubDate>
+        <pubDate>Sat, 27 Jul 2024 06:52:44 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2024]]></copyright>
         <item>
             <title><![CDATA[Betting Heavy when convinced]]></title>
