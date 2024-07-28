@@ -31,7 +31,9 @@ export default Posts;
 
 export const getStaticProps = async () => {
   const posts = allPosts
-    .filter(({ published }) => published)
+    .filter(
+      ({ published }) => published || process.env.NODE_ENV === "development"
+    )
     .map(({ slug, excerpt, cover, title, date }) => ({
       slug,
       excerpt,
@@ -39,6 +41,7 @@ export const getStaticProps = async () => {
       title,
       date,
     }));
+
   posts.sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
 
   return {
