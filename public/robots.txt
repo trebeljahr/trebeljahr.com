@@ -1,5 +1,9 @@
 # *
 User-agent: *
+Disallow: /newsletter/*
+
+# *
+User-agent: *
 Allow: /
 
 # Host

@@ -9,9 +9,9 @@
             <link>https://trebeljahr.com</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 24 Sep 2024 14:04:44 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Sep 2024 13:57:58 GMT</lastBuildDate>
         <atom:link href="https://trebeljahr.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 24 Sep 2024 14:04:44 GMT</pubDate>
+        <pubDate>Wed, 25 Sep 2024 13:57:58 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2024]]></copyright>
         <item>
             <title><![CDATA[Betting Heavy when convinced]]></title>
@@ -43,7 +43,7 @@
         </item>
         <item>
             <title><![CDATA[Diatom Arrangements]]></title>
-            <description><![CDATA[This post is a bit of an odd one: it's a collection of images of diatom arrangements. Diatoms are single-celled algae that have a glass shell, that refracts light in beautiful colors if viewed under a microscope...]]></description>
+            <description><![CDATA[This post is a bit of an odd one: it's a collection of images of diatom arrangements. Diatoms are single-celled algae that have a glass shell. This shell refracts light in beautiful colors if viewed under a microscope...]]></description>
             <link>https://trebeljahr.com/posts/diatoms</link>
             <guid isPermaLink="true">https://trebeljahr.com/posts/diatoms</guid>
             <pubDate>Wed, 18 Sep 2024 00:00:00 GMT</pubDate>
