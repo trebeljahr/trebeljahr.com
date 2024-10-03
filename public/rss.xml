@@ -9,9 +9,9 @@
             <link>https://trebeljahr.com</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 02 Oct 2024 14:41:02 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 03 Oct 2024 12:07:54 GMT</lastBuildDate>
         <atom:link href="https://trebeljahr.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 02 Oct 2024 14:41:02 GMT</pubDate>
+        <pubDate>Thu, 03 Oct 2024 12:07:54 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2024]]></copyright>
         <item>
             <title><![CDATA[Betting Heavy when convinced]]></title>
@@ -481,6 +481,13 @@
             <link>https://trebeljahr.com/newsletters/open-ai-o1-carpentopod-and-diatom-art</link>
             <guid isPermaLink="true">https://trebeljahr.com/newsletters/open-ai-o1-carpentopod-and-diatom-art</guid>
             <pubDate>Sun, 22 Sep 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[Welcome to this edition of Live and Learn. ]]></description>
+            <link>https://trebeljahr.com/newsletters/</link>
+            <guid isPermaLink="true">https://trebeljahr.com/newsletters/</guid>
+            <pubDate>Sun, 09 Jun 2024 22:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[ChatGPT, Neuralink, and Advice Against Procrastination]]></title>
