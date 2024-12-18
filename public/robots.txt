@@ -7,7 +7,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.trebeljahr.com
+Host: https://ricos.site
 
 # Sitemaps
-Sitemap: https://www.trebeljahr.com/sitemap.xml
+Sitemap: https://ricos.site/sitemap.xml
