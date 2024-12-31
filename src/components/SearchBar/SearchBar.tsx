@@ -29,6 +29,7 @@ export default function Search<T extends Record<string, any>>({
       return;
     }
 
+    // this somehow breaks things... commenting it out fixes navigation again (but removes search capabilities)
     const results = fuzzysort.go(searchTerm, all, {
       keys: searchKeys,
       threshold: -10,
