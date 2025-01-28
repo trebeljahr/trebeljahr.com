@@ -28,6 +28,7 @@
     "@headlessui/react": "^2.2.0",
     "@next/bundle-analyzer": "^15.1.2",
     "@react-hook/window-size": "^3.1.1",
+    "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.9.1",
     "clsx": "^2.1.1",
     "date-fns": "2.21.3",
@@ -51,7 +52,6 @@
     "react-modal": "^3.16.1",
     "react-photo-album": "^2.2.2",
     "react-slider": "^2.0.4",
-    "simple-react-canvas-component": "^0.1.14",
     "three": "^0.146.0",
     "use-local-storage-state": "^19.4.0",
     "yet-another-react-lightbox": "^3.9.0"
