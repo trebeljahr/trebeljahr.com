@@ -99,8 +99,12 @@ function MobileVersion({ open, close }: NavbarProps) {
             </Link>
           ))}
 
-          <CollapsibleMenuMobile links={resources} text="resources" />
-          <CollapsibleMenuMobile links={about} text="about" />
+          <CollapsibleMenuMobile
+            links={resources}
+            text="resources"
+            closeNav={close}
+          />
+          <CollapsibleMenuMobile links={about} text="about" closeNav={close} />
         </div>
       </DisclosurePanel>
     </div>
@@ -176,9 +180,15 @@ export const LeftSmallNavbar = () => {
                   <CollapsibleMenuMobile
                     links={resources}
                     text="resources"
+                    closeNav={close}
                     left
                   />
-                  <CollapsibleMenuMobile links={about} text="about" left />
+                  <CollapsibleMenuMobile
+                    links={about}
+                    text="about"
+                    closeNav={close}
+                    left
+                  />
                 </div>
               </div>
             </motion.div>
