@@ -1,6 +1,16 @@
+import { CollapsibleMenuMobile } from "@components/Navbar/CollapsibleMenus";
+import { DarkModeHandler } from "@components/Navbar/DarkModeHandler";
+import {
+  about,
+  navigation,
+  resources,
+  RicosSiteBanner,
+} from "@components/Navbar/TailwindNavbar";
+import clsx from "clsx";
 import type { Variants } from "motion/react";
 import * as motion from "motion/react-client";
-import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { PropsWithChildren, useEffect, useRef, useState } from "react";
 
 export default function Variants() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,15 +19,19 @@ export default function Variants() {
 
   return (
     <div>
-      <div style={container}>
+      <div className="relative flex justify-start items-stretch flex-1 w-[500px] max-w-full h-screen overflow-hidden">
         <motion.nav
           initial={false}
           animate={isOpen ? "open" : "closed"}
           custom={height}
           ref={containerRef}
-          style={nav}
+          className="w-[300px]"
         >
-          <motion.div style={background} variants={sidebarVariants} />
+          <motion.div
+            className="absolute top-0 left-0 bottom-0 w-[300px] h-screen bg-gray-200 dark:bg-gray-800"
+            variants={sidebarVariants}
+            custom={height}
+          />
           <Navigation />
           <MenuToggle toggle={() => setIsOpen(!isOpen)} />
         </motion.nav>
@@ -35,13 +49,60 @@ const navVariants = {
   },
 };
 
-const Navigation = () => (
-  <motion.ul style={list} variants={navVariants}>
-    {[0, 1, 2, 3, 4].map((i) => (
-      <MenuItem i={i} key={i} />
-    ))}
-  </motion.ul>
-);
+const Navlink = ({ link, left = true }: { link: string; left?: boolean }) => {
+  return (
+    <Link
+      href={`/${link}`}
+      className={clsx(
+        "block break-keep whitespace-nowrap",
+        left ? "text-left" : "text-right"
+      )}
+    >
+      {link}
+    </Link>
+  );
+};
+
+const AnimatedMenuItem = ({ children }: PropsWithChildren) => {
+  return (
+    <motion.div
+      className="flex items-center justify-start p-0 m-0 mb-2 cursor-pointer rounded-md px-4 py-2 w-fit"
+      variants={itemVariants}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+const Navigation = () => {
+  return (
+    <motion.nav
+      className="m-0 absolute top-20 left-5 prose-a:no-underline prose-a:hover:text-inherit prose-a:font-normal font-normal prose-a:text-inherit"
+      variants={navVariants}
+    >
+      <AnimatedMenuItem>
+        <RicosSiteBanner />
+      </AnimatedMenuItem>
+      {navigation.map((link) => (
+        <AnimatedMenuItem key={link}>
+          <Navlink link={link} />
+        </AnimatedMenuItem>
+      ))}
+      <AnimatedMenuItem>
+        <CollapsibleMenuMobile links={resources} text="resources" left />
+      </AnimatedMenuItem>
+      <AnimatedMenuItem>
+        <CollapsibleMenuMobile links={about} text="about" left />
+      </AnimatedMenuItem>
+
+      <AnimatedMenuItem>
+        <DarkModeHandler />
+      </AnimatedMenuItem>
+    </motion.nav>
+  );
+};
 
 const itemVariants = {
   open: {
@@ -60,34 +121,19 @@ const itemVariants = {
   },
 };
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
-
-const MenuItem = ({ i }: { i: number }) => {
-  const border = `2px solid ${colors[i]}`;
-  return (
-    <motion.li
-      style={listItem}
-      variants={itemVariants}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      <div style={{ ...iconPlaceholder, border }} />
-      <div style={{ ...textPlaceholder, border }} />
-    </motion.li>
-  );
-};
-
 const sidebarVariants = {
-  open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  }),
+  open: (height: number) => {
+    return {
+      clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+      transition: {
+        type: "spring",
+        stiffness: 20,
+        restDelta: 2,
+      },
+    };
+  },
   closed: {
-    clipPath: "circle(30px at 40px 40px)",
+    clipPath: "circle(20px at 26px 28px)",
     transition: {
       delay: 0.2,
       type: "spring",
@@ -107,15 +153,23 @@ const Path = (props: PathProps) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
-    stroke="hsl(0, 0%, 18%)"
+    // stroke="hsl(0, 0%, 18%)"
     strokeLinecap="round"
     {...props}
   />
 );
 
 const MenuToggle = ({ toggle }: { toggle: () => void }) => (
-  <button style={toggleContainer} onClick={toggle}>
-    <svg width="23" height="23" viewBox="0 0 23 23">
+  <button
+    className="outline-none border-none select-none cursor-pointer absolute top-[18px] left-[15px] rounded-full bg-transparent"
+    onClick={toggle}
+  >
+    <svg
+      width="23"
+      height="23"
+      viewBox="0 0 23 23"
+      className="stroke-black dark:stroke-white"
+    >
       <Path
         variants={{
           closed: { d: "M 2 2.5 L 20 2.5" },
@@ -139,83 +193,6 @@ const MenuToggle = ({ toggle }: { toggle: () => void }) => (
     </svg>
   </button>
 );
-
-const container: React.CSSProperties = {
-  position: "relative",
-  display: "flex",
-  justifyContent: "flex-start",
-  alignItems: "stretch",
-  flex: 1,
-  width: 500,
-  maxWidth: "100%",
-  height: 400,
-  backgroundColor: "var(--accent)",
-  borderRadius: 20,
-  overflow: "hidden",
-};
-
-const nav: React.CSSProperties = {
-  width: 300,
-};
-
-const background: React.CSSProperties = {
-  backgroundColor: "#f5f5f5",
-  position: "absolute",
-  top: 0,
-  left: 0,
-  bottom: 0,
-  width: 300,
-};
-
-const toggleContainer: React.CSSProperties = {
-  outline: "none",
-  border: "none",
-  WebkitUserSelect: "none",
-  MozUserSelect: "none",
-  cursor: "pointer",
-  position: "absolute",
-  top: 18,
-  left: 15,
-  width: 50,
-  height: 50,
-  borderRadius: "50%",
-  background: "transparent",
-};
-
-const list: React.CSSProperties = {
-  listStyle: "none",
-  padding: 25,
-  margin: 0,
-  position: "absolute",
-  top: 80,
-  width: 230,
-};
-
-const listItem: React.CSSProperties = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "flex-start",
-  padding: 0,
-  margin: 0,
-  listStyle: "none",
-  marginBottom: 20,
-  cursor: "pointer",
-};
-
-const iconPlaceholder: React.CSSProperties = {
-  width: 40,
-  height: 40,
-  borderRadius: "50%",
-  flex: "40px 0",
-  marginRight: 20,
-};
-
-const textPlaceholder: React.CSSProperties = {
-  borderRadius: 5,
-  width: 200,
-  height: 20,
-  flex: 1,
-};
 
 /**
  * ==============   Utils   ================
