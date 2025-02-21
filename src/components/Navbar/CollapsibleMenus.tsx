@@ -1,94 +1,79 @@
-import {
-  Disclosure,
-  Menu,
-  MenuButton,
-  MenuItems,
-  Transition,
-} from "@headlessui/react";
-import { Fragment } from "react";
-import { SingleMenuItem } from "./SingleMenuItem";
-import { FiChevronDown } from "react-icons/fi";
 import clsx from "clsx";
+import { useState } from "react";
+import { FiChevronDown } from "react-icons/fi";
+import { SingleMenuItem } from "./SingleMenuItem";
 
 type DesktopMenuProps = {
   links: string[];
   text: string;
+  left?: boolean;
 };
 
 export function CollapsibleMenuDesktop({ links, text }: DesktopMenuProps) {
+  const [open, setOpen] = useState(false);
+  const toggleMenu = () => setOpen((prev) => !prev);
+
   return (
-    <Menu as="div" className="h-fit block relative ml-3">
-      <MenuButton className="block hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md px-3 py-2">
+    <div className="h-fit block relative ml-3">
+      <button
+        className="block hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md px-3 py-2"
+        onClick={toggleMenu}
+      >
         <span className="flex items-center justify-center">
           <span>{text}</span>
           <FiChevronDown className="h-3 w-3 ml-1" />
         </span>
-      </MenuButton>
-      <Transition
-        as={Fragment}
-        enter="transition ease-out duration-200"
-        enterFrom="transform opacity-0 scale-95"
-        enterTo="transform opacity-100 scale-100"
-        leave="transition ease-in duration-75"
-        leaveFrom="transform opacity-100 scale-100"
-        leaveTo="transform opacity-0 scale-95"
-      >
-        <MenuItems className="overflow-hidden bg-white dark:bg-gray-800 flex-col absolute box-border right-0 z-50 mt-2 origin-top-right w-fit rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+      </button>
+      {open && (
+        <div className="overflow-hidden bg-white dark:bg-gray-800 flex-col absolute box-border right-0 z-50 mt-2 origin-top-right w-fit rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           {links.map((item) => (
-            <SingleMenuItem key={item} link={item} />
+            <SingleMenuItem key={item} link={item} toggleMenu={toggleMenu} />
           ))}
-        </MenuItems>
-      </Transition>
-    </Menu>
+        </div>
+      )}
+    </div>
   );
 }
 
-type MobileMenuProps = DesktopMenuProps & {
-  closeNav?: () => void;
-  left?: boolean;
-};
+type MobileMenuProps = DesktopMenuProps;
 
 export function CollapsibleMenuMobile({
   links,
   text,
-  closeNav,
   left = false,
 }: MobileMenuProps) {
+  const [open, setOpen] = useState(false);
+  const toggleMenu = () => setOpen((prev) => !prev);
+
   return (
-    <Menu as="div" className="relative w-fit">
+    <div className="relative w-fit">
       <div className="flex flex-col">
-        <MenuButton
+        <button
           className={clsx(
-            "hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md px-3 py-2 flex",
+            "hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md flex",
             left ? "self-start justify-start" : "self-end justify-end"
           )}
+          onClick={toggleMenu}
         >
           <div className="flex items-center justify-center">
             <span>{text}</span>
             <FiChevronDown className="h-3 w-3 ml-1" />
           </div>
-        </MenuButton>
-        <Transition
-          as={Fragment}
-          enter="transition ease-out duration-200"
-          enterFrom="transform opacity-0 scale-95"
-          enterTo="transform opacity-100 scale-100"
-          leave="transition ease-in duration-75"
-          leaveFrom="transform opacity-100 scale-100"
-          leaveTo="transform opacity-0 scale-95"
-        >
-          <MenuItems className="overflow-hidden bg-white dark:bg-slate-800 mt-2 w-48 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+        </button>
+
+        {open && (
+          <div className="overflow-hidden bg-white dark:bg-slate-800 mt-2 w-48 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
             {links.map((item) => (
               <SingleMenuItem
                 key={item}
                 link={item}
-                closeNav={closeNav}
+                toggleMenu={toggleMenu}
                 left={left}
               />
             ))}
-          </MenuItems>
-        </Transition>
+          </div>
+        )}
       </div>
-    </Menu>
+    </div>
   );
 }

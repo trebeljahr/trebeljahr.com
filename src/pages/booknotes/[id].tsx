@@ -6,7 +6,6 @@ import { MDXContent } from "@components/MDXContent";
 import { MetadataDisplay } from "@components/MetadataDisplay";
 import { NewsletterForm } from "@components/NewsletterForm";
 import { ToTopButton } from "@components/ToTopButton";
-import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { Booknote, booknotes } from "@velite";
 import { FaInfo } from "react-icons/fa";
 import { byOnlyPublished } from "src/lib/utils";
